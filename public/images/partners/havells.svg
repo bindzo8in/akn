@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <!-- Havells Red Grid -->
+  <path d="M8 14h12v12H8zm16 0h12v12H24zm0 16h12v12H24z" fill="#EF4444" />
+  
+  <!-- Text -->
+  <text x="48" y="34" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="900" fill="#0F172A" letter-spacing="0.5">HAVELLS</text>
+  <text x="49" y="47" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="800" fill="#EF4444" letter-spacing="2">WIRES &amp; SWITCHES</text>
+</svg>

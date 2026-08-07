@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <!-- Jaquar Icon -->
+  <rect x="6" y="10" width="38" height="38" rx="8" fill="#DC2626" />
+  <path d="M18 34c4.5 0 8-3.5 8-9V16h4" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none" />
+  
+  <!-- Text -->
+  <text x="54" y="35" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="28" font-weight="900" fill="#0F172A" letter-spacing="-1">jaquar</text>
+  <text x="55" y="47" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="800" fill="#DC2626" letter-spacing="3">BATH + LIGHT</text>
+</svg>

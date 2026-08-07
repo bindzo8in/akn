@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <!-- Kajaria Tile Grid -->
+  <path d="M6 12h16v16H6zm20 0h16v16H26zm0 20h16v16H26z" fill="#B91C1C" />
+  
+  <!-- Text -->
+  <text x="52" y="34" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="26" font-weight="900" fill="#0F172A" letter-spacing="-0.5">Kajaria</text>
+  <text x="53" y="47" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="800" fill="#B91C1C" letter-spacing="2.5">TILES &amp; SLABS</text>
+</svg>

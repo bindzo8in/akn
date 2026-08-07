@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <!-- Finolex Red Disk -->
+  <circle cx="24" cy="30" r="17" fill="#DC2626" />
+  <path d="M13 30h22" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Text -->
+  <text x="50" y="34" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="900" fill="#0F172A">Finolex</text>
+  <text x="51" y="46" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="800" fill="#2563EB" letter-spacing="2">WIRES &amp; CABLES</text>
+</svg>

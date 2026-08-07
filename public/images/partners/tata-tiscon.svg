@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <!-- Tata Globe Icon -->
+  <circle cx="26" cy="30" r="18" fill="#0284C7" />
+  <path d="M14 24h24M26 24v12" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Text -->
+  <text x="56" y="32" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="900" fill="#0F172A" letter-spacing="0.5">TATA</text>
+  <text x="122" y="32" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="800" fill="#EA580C" letter-spacing="0.5">TISCON</text>
+  <text x="57" y="46" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" fill="#64748B" letter-spacing="2">550D SUPER DUCTILE</text>
+</svg>

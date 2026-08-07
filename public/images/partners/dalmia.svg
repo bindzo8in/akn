@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <!-- Dalmia Circle Mark -->
+  <circle cx="24" cy="30" r="16" fill="#2563EB" />
+  <path d="M18 22l12 8-12 8z" fill="#EF4444" />
+  
+  <!-- Text -->
+  <text x="50" y="32" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" font-weight="900" fill="#0F172A">Dalmia</text>
+  <text x="51" y="46" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="800" fill="#EF4444" letter-spacing="3">CEMENT</text>
+</svg>

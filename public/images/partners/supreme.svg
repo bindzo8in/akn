@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <!-- Supreme Red Box -->
+  <rect x="6" y="12" width="36" height="34" rx="6" fill="#EF4444" />
+  <text x="13" y="37" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF">S</text>
+  
+  <!-- Text -->
+  <text x="50" y="34" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="23" font-weight="900" fill="#0F172A">Supreme</text>
+  <text x="51" y="46" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="800" fill="#EF4444" letter-spacing="2">PIPING SYSTEMS</text>
+</svg>

@@ -1,14 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Shield, Sparkles, Check, Building2, Wrench, Zap, Droplets, Paintbrush, Grid } from "lucide-react";
+import Image from "next/image";
+import { Shield, Sparkles, Check } from "lucide-react";
 
 interface BrandItem {
   name: string;
   category: string;
   badge: string;
-  color: string; // color used on hover
-  svgLogo: React.ReactNode;
+  color: string;
+  logoPath: string;
 }
 
 const partnerBrands: BrandItem[] = [
@@ -16,172 +17,85 @@ const partnerBrands: BrandItem[] = [
     name: "UltraTech Cement",
     category: "Cement & Concrete",
     badge: "53 Grade OPC / PPC",
-    color: "#EAB308", // Yellow / Black
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <rect x="2" y="5" width="30" height="30" rx="4" fill="#FACC15" />
-        <path d="M10 28V12h5v12h7V12h5v16H10z" fill="#000000" />
-        <text x="40" y="24" fontFamily="sans-serif" fontSize="16" fontWeight="900" fill="currentColor">UltraTech</text>
-        <text x="40" y="34" fontFamily="sans-serif" fontSize="9" fontWeight="600" fill="#EAB308" letterSpacing="1">CEMENT</text>
-      </svg>
-    ),
+    color: "#EAB308",
+    logoPath: "/logos/images.png",
   },
   {
     name: "Tata Tiscon",
     category: "Structural TMT Steel",
     badge: "Fe-550D Super Ductile",
-    color: "#0284C7", // Tata Blue
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <circle cx="18" cy="20" r="14" fill="#0284C7" />
-        <path d="M10 15h16M18 15v10" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" />
-        <text x="40" y="22" fontFamily="sans-serif" fontSize="16" fontWeight="900" fill="currentColor">TATA</text>
-        <text x="88" y="22" fontFamily="sans-serif" fontSize="15" fontWeight="700" fill="#EA580C">TISCON</text>
-        <text x="40" y="33" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#64748B">550D TMT BARS</text>
-      </svg>
-    ),
+    color: "#0284C7",
+    logoPath: "/logos/tiscon-logo.jpg",
   },
   {
     name: "JSW Steel",
     category: "Structural TMT Steel",
     badge: "Fe-500D Grade TMT",
-    color: "#DC2626", // JSW Red / Navy
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <path d="M4 10l12-5v30l-12-5z" fill="#DC2626" />
-        <path d="M18 5l12 5v20l-12 5z" fill="#1E3A8A" />
-        <text x="38" y="24" fontFamily="sans-serif" fontSize="18" fontWeight="900" fill="currentColor">JSW</text>
-        <text x="80" y="24" fontFamily="sans-serif" fontSize="15" fontWeight="700" fill="#DC2626">Steel</text>
-        <text x="38" y="34" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#64748B">Better Everyday</text>
-      </svg>
-    ),
+    color: "#DC2626",
+    logoPath: "/logos/1666307a7069a356e2a5b97d1bb9903e.jpg",
   },
   {
     name: "Jaquar",
     category: "Sanitaryware & Fittings",
     badge: "10-Year Warranty Fixtures",
-    color: "#DC2626", // Jaquar Red
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <rect x="4" y="8" width="24" height="24" rx="6" fill="#DC2626" />
-        <path d="M12 24c3 0 5-2 5-6V12h3" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-        <text x="36" y="25" fontFamily="sans-serif" fontSize="19" fontWeight="800" fill="currentColor">jaquar</text>
-        <text x="37" y="34" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#DC2626" letterSpacing="1.5">BATH + LIGHT</text>
-      </svg>
-    ),
+    color: "#DC2626",
+    logoPath: "/logos/jaquar_612.webp",
   },
   {
     name: "Asian Paints",
     category: "Paints & Waterproofing",
     badge: "Royale & Apex Weatherproof",
-    color: "#E11D48", // Asian Paints Red / Yellow
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <circle cx="12" cy="16" r="6" fill="#DC2626" />
-        <circle cx="24" cy="16" r="6" fill="#F59E0B" />
-        <circle cx="18" cy="26" r="6" fill="#7C3AED" />
-        <text x="38" y="21" fontFamily="sans-serif" fontSize="14" fontWeight="900" fill="currentColor">asian</text>
-        <text x="76" y="21" fontFamily="sans-serif" fontSize="14" fontWeight="900" fill="#DC2626">paints</text>
-        <text x="38" y="32" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#64748B">ROYALE EMULSIONS</text>
-      </svg>
-    ),
+    color: "#E11D48",
+    logoPath: "/logos/75b978a23898bf4b303b9b400259c4f0.png",
   },
   {
     name: "Havells",
     category: "Electricals & Cabling",
     badge: "FR-Grade ISI Copper Wires",
-    color: "#EF4444", // Havells Red
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <path d="M6 10h8v8H6zm12 0h8v8h-8zm0 12h8v8h-8z" fill="#EF4444" />
-        <text x="38" y="24" fontFamily="sans-serif" fontSize="17" fontWeight="900" fill="currentColor">HAVELLS</text>
-        <text x="38" y="34" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#EF4444">WIRES & SWITCHES</text>
-      </svg>
-    ),
+    color: "#EF4444",
+    logoPath: "/logos/Havells_logo_PNG5.png",
   },
   {
     name: "CERA",
     category: "Sanitaryware & Tiles",
     badge: "Ceramics & Concealed Tanks",
-    color: "#2563EB", // CERA Blue
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <rect x="4" y="6" width="28" height="28" rx="8" fill="#2563EB" />
-        <text x="9" y="26" fontFamily="sans-serif" fontSize="14" fontWeight="900" fill="#FFFFFF">C</text>
-        <text x="38" y="25" fontFamily="sans-serif" fontSize="20" fontWeight="900" fill="currentColor" letterSpacing="1">CERA</text>
-        <text x="39" y="34" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#2563EB">SANITARYWARE</text>
-      </svg>
-    ),
+    color: "#2563EB",
+    logoPath: "/logos/cera.jpg",
   },
   {
     name: "Kajaria Tiles",
     category: "Vitrified Tiles",
     badge: "Anti-Skid & Nano Polish",
-    color: "#B91C1C", // Kajaria Maroon
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <path d="M4 8h12v12H4zm14 0h12v12H18zm0 14h12v12H18z" fill="#B91C1C" />
-        <text x="38" y="24" fontFamily="sans-serif" fontSize="18" fontWeight="900" fill="currentColor">Kajaria</text>
-        <text x="38" y="34" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#B91C1C" letterSpacing="1">TILES & SLABS</text>
-      </svg>
-    ),
+    color: "#B91C1C",
+    logoPath: "/logos/Kajaria-Tiles-Logo-Vector.svg-.png",
   },
   {
     name: "Dalmia Cement",
     category: "Cement & Foundation",
     badge: "Future Today OPC 53",
-    color: "#2563EB", // Dalmia Blue / Red
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <circle cx="16" cy="20" r="12" fill="#2563EB" />
-        <path d="M12 14l8 6-8 6z" fill="#EF4444" />
-        <text x="36" y="22" fontFamily="sans-serif" fontSize="16" fontWeight="900" fill="currentColor">Dalmia</text>
-        <text x="36" y="33" fontFamily="sans-serif" fontSize="9" fontWeight="700" fill="#EF4444">CEMENT</text>
-      </svg>
-    ),
+    color: "#2563EB",
+    logoPath: "/logos/logo-dalmia-cement-bharat-limited-dalmia-group-ocl-india-ltd-hornbill-logo-152cc8b80c8a069086a65b94887d3b17.png",
   },
   {
     name: "Finolex Cables",
     category: "Electricals & Piping",
     badge: "100% Electrolytic Copper",
-    color: "#DC2626", // Finolex Red / Navy
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <circle cx="16" cy="20" r="13" fill="#DC2626" />
-        <path d="M8 20h16" stroke="#FFFFFF" strokeWidth="3" />
-        <text x="36" y="23" fontFamily="sans-serif" fontSize="16" fontWeight="900" fill="currentColor">Finolex</text>
-        <text x="36" y="33" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#2563EB">WIRES & CABLES</text>
-      </svg>
-    ),
+    color: "#DC2626",
+    logoPath: "/logos/Finolex-Logo.jpg",
   },
   {
     name: "Supreme Pipes",
     category: "Plumbing & Drainage",
     badge: "CPVC & SWR Leakproof",
-    color: "#EF4444", // Supreme Red
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <rect x="4" y="10" width="24" height="20" rx="4" fill="#EF4444" />
-        <text x="8" y="25" fontFamily="sans-serif" fontSize="13" fontWeight="900" fill="#FFFFFF">S</text>
-        <text x="34" y="24" fontFamily="sans-serif" fontSize="16" fontWeight="900" fill="currentColor">Supreme</text>
-        <text x="34" y="34" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#EF4444">PIPING SYSTEMS</text>
-      </svg>
-    ),
+    color: "#EF4444",
+    logoPath: "/logos/Supreme_Logo.svg.webp",
   },
   {
     name: "Nippon Paint",
     category: "Specialized Coatings",
     badge: "Eco-Friendly Weatherbond",
-    color: "#E11D48", // Nippon Red
-    svgLogo: (
-      <svg viewBox="0 0 160 40" className="h-8 w-auto">
-        <circle cx="10" cy="18" r="7" fill="#E11D48" />
-        <circle cx="22" cy="18" r="7" fill="#E11D48" />
-        <text x="36" y="22" fontFamily="sans-serif" fontSize="15" fontWeight="900" fill="currentColor">NIPPON</text>
-        <text x="94" y="22" fontFamily="sans-serif" fontSize="15" fontWeight="700" fill="#E11D48">PAINT</text>
-        <text x="36" y="33" fontFamily="sans-serif" fontSize="8" fontWeight="600" fill="#64748B">INSPIRED BY YOU</text>
-      </svg>
-    ),
+    color: "#E11D48",
+    logoPath: "/logos/nippon-paint-logo-png_seeklogo-484086.png",
   },
 ];
 
@@ -223,7 +137,9 @@ export default function Partners() {
         >
           <div className="mb-3 flex items-center justify-center gap-3">
             <div className="accent-line" />
-            <span className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">Material Excellence</span>
+            <span className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
+              Material Excellence
+            </span>
             <div className="accent-line" />
           </div>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
@@ -234,7 +150,7 @@ export default function Partners() {
           </p>
         </div>
 
-        {/* Continuous Logo Marquee (B&W default -> Color on hover) */}
+        {/* Continuous Logo Marquee (Original Logos from public/logos) */}
         <div
           className={`relative mb-14 overflow-hidden rounded-2xl border border-border bg-card py-6 shadow-sm transition-all duration-700 delay-100 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
@@ -250,16 +166,21 @@ export default function Partners() {
                 key={`${brand.name}-${i}`}
                 className="group flex cursor-pointer items-center gap-3 rounded-xl border border-transparent px-4 py-2 transition-all duration-300 hover:border-border hover:bg-muted/80"
               >
-                {/* Logo with B&W filter -> Color on hover */}
-                <div className="grayscale contrast-75 opacity-60 transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0 group-hover:contrast-100 group-hover:opacity-100">
-                  {brand.svgLogo}
+                {/* Original Brand Image Logo */}
+                <div className="relative h-12 w-40 overflow-hidden rounded-lg bg-white/90 p-1.5 shadow-sm transition-all duration-300 group-hover:scale-105 group-hover:bg-white">
+                  <Image
+                    src={brand.logoPath}
+                    alt={`${brand.name} Logo`}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* 12-Brand Logo & Specification Grid (B&W to Color on hover) */}
+        {/* 12-Brand Original Logo & Specification Grid */}
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {partnerBrands.map((brand, i) => (
             <div
@@ -281,10 +202,15 @@ export default function Partners() {
                 </span>
               </div>
 
-              {/* Center: Brand Logo (B&W default -> Full color on hover) */}
-              <div className="my-3 flex h-14 items-center justify-start">
-                <div className="grayscale contrast-75 opacity-60 transition-all duration-400 ease-out group-hover:scale-105 group-hover:grayscale-0 group-hover:contrast-100 group-hover:opacity-100">
-                  {brand.svgLogo}
+              {/* Center: Original Brand Image Logo */}
+              <div className="my-3 flex h-16 items-center justify-center rounded-xl bg-white/95 p-3 shadow-inner border border-border/40 transition-all group-hover:bg-white">
+                <div className="relative h-12 w-full transition-transform duration-400 ease-out group-hover:scale-105">
+                  <Image
+                    src={brand.logoPath}
+                    alt={`${brand.name} Official Logo`}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
               </div>
 
@@ -295,7 +221,7 @@ export default function Partners() {
                 </span>
                 <span className="flex items-center gap-1 text-[11px] text-muted-foreground">
                   <Check className="size-3 text-teal" />
-                  IS Tested
+                  IS Certified
                 </span>
               </div>
 
@@ -323,7 +249,7 @@ export default function Partners() {
                 100% Genuine Certified Materials Guaranteed
               </h4>
               <p className="mt-0.5 text-xs text-muted-foreground sm:text-sm">
-                Direct mill test certificates (MTC) & manufacturer batch test reports provided for all structural cement and TMT steel pours.
+                Direct mill test certificates (MTC) &amp; manufacturer batch test reports provided for all structural cement and TMT steel pours.
               </p>
             </div>
           </div>
