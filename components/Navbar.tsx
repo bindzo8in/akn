@@ -191,10 +191,10 @@ export default function Navbar() {
             {/* Logo */}
             <Link
               href="/"
-              className="group flex items-center gap-2.5"
+              className="group flex items-center gap-3 sm:gap-4"
               onClick={() => setIsMobileOpen(false)}
             >
-              <div className="relative size-10 overflow-hidden rounded-xl bg-white/90 p-1 shadow-sm border border-white/20 transition-transform group-hover:scale-105">
+              <div className="relative size-10 md:size-14 lg:size-16 shrink-0 overflow-hidden rounded-2xl bg-white/95 p-1.5 shadow-md border border-white/30 transition-transform group-hover:scale-105">
                 <Image
                   src="/images/logo.png"
                   alt="AKN Construction Logo"
@@ -204,15 +204,15 @@ export default function Navbar() {
                 />
               </div>
               <div className="flex flex-col justify-center leading-none">
-                <span className="font-heading text-base sm:text-lg font-bold tracking-tight">
+                <span className="font-heading text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-tight">
                   <span className="text-gold">A</span>
                   <span className={isScrolled ? "text-teal" : "text-white"}>K</span>
                   <span className="text-gold">N</span>
-                  <span className={`ml-1 text-xs font-semibold tracking-tight ${isScrolled ? "text-foreground" : "text-white"}`}>
+                  <span className={`ml-1.5 text-xs sm:text-sm md:text-base font-bold tracking-tight ${isScrolled ? "text-foreground" : "text-white"}`}>
                     Construction & Interiors
                   </span>
                 </span>
-                <span className={`text-[10px] font-bold tracking-wider uppercase mt-1 ${isScrolled ? "text-teal" : "text-gold"}`}>
+                <span className={`text-[10px] sm:text-xs md:text-xs font-extrabold tracking-widest uppercase mt-1 ${isScrolled ? "text-teal" : "text-gold"}`}>
                   Engineer / Contractors
                 </span>
               </div>

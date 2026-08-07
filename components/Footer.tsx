@@ -40,8 +40,8 @@ export default function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-3 group">
-              <div className="relative size-11 overflow-hidden rounded-xl bg-white p-1 border border-border shadow-sm transition-transform group-hover:scale-105">
+            <Link href="/" className="inline-flex items-center gap-3.5 sm:gap-4 group">
+              <div className="relative size-12 md:size-16 lg:size-20 shrink-0 overflow-hidden rounded-2xl bg-white p-2 border border-border shadow-md transition-transform group-hover:scale-105">
                 <Image
                   src="/images/logo.png"
                   alt="AKN Construction Logo"
@@ -50,13 +50,13 @@ export default function Footer() {
                 />
               </div>
               <div className="flex flex-col justify-center leading-none">
-                <span className="font-heading text-lg font-bold tracking-tight text-foreground">
+                <span className="font-heading text-lg md:text-xl lg:text-2xl font-bold tracking-tight text-foreground">
                   <span className="text-gold">A</span>
                   <span className="text-teal">K</span>
                   <span className="text-gold">N</span>{" "}
-                  <span className="text-sm font-semibold text-foreground">Construction & Interiors</span>
+                  <span className="text-sm md:text-base font-bold text-foreground">Construction & Interiors</span>
                 </span>
-                <span className="text-[10px] font-bold tracking-wider text-teal uppercase mt-1">
+                <span className="text-[10px] md:text-xs font-extrabold tracking-widest text-teal uppercase mt-1.5">
                   Engineer / Contractors
                 </span>
               </div>
