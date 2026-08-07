@@ -64,14 +64,14 @@ export default function ContactMapDirectory() {
             <div className="relative h-[420px] sm:h-[500px] w-full overflow-hidden rounded-3xl border border-border bg-muted shadow-xl">
               {/* Google Maps Embed iframe */}
               <iframe
-                title="AKN Construction Dharmapuri Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62402.13840702598!2d78.1256923486328!3d12.131976000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac16f1c4e7f3ef%3A0x6b772b7a8d56b010!2sDharmapuri%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                title="AKN Construction Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.7790018932515!2d78.2084381!3d12.5307945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac352cfd6394c9%3A0x2b14d54a7700b7bb!2sAKN%20construction!5e0!3m2!1sen!2sin!4v1786078221227!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerPolicy="strict-origin-when-cross-origin"
                 className="h-full w-full grayscale-[20%] contrast-[1.05]"
               />
 
@@ -83,7 +83,7 @@ export default function ContactMapDirectory() {
                 </div>
                 <p className="mt-1 text-xs text-muted-foreground">{env.NEXT_PUBLIC_LOCATION_PRIMARY}, Tamil Nadu</p>
                 <a
-                  href="https://maps.google.com/?q=Dharmapuri,Tamil+Nadu"
+                  href="https://www.google.com/maps/place/AKN+construction/@12.5307945,78.2084381,17z"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-2 inline-flex items-center gap-1.5 text-xs font-semibold text-teal hover:underline"
