@@ -25,7 +25,7 @@ const services = [
     title: "Turnkey Residential Construction",
     subtitle: "Custom Luxury Villas, Duplexes & Independent Residences",
     desc: "We construct generational homes with complete turnkey responsibility — managing everything from geotechnical soil analysis and column footing to RCC framing, multi-layer waterproofing, and final luxury finishing.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=80",
+    image: "/images/completed_projects/completed-project-01.jpeg",
     features: [
       "100% Scientific Vastu Alignment (Sunlight & Wind Flow)",
       "IS 456 Structural RCC Design with Fe-550D Steel",
@@ -43,7 +43,7 @@ const services = [
     title: "Commercial & Retail Infrastructure",
     subtitle: "Multi-Storey Arcades, Shopping Complexes & Office Buildings",
     desc: "Engineered for maximum commercial rental yield, heavy foot traffic durability, and striking street presence with modern ACP cladding, structural glazing facades, and fire safety systems.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1000&q=80",
+    image: "/images/completed_projects/completed-project-05.jpeg",
     features: [
       "High-Traffic Load-Bearing RCC Columns & Beams",
       "Contemporary ACP & Spider-Fitting Structural Glazing Facades",
@@ -61,7 +61,7 @@ const services = [
     title: "Hospital & Healthcare Infrastructure",
     subtitle: "Multi-Specialty Clinics, Diagnostic Centers & Nursing Homes",
     desc: "Specialized healthcare facilities built in strict compliance with medical infrastructure standards, featuring anti-microbial surfaces, medical gas pipeline systems (MGPS), and vibration-free imaging wings.",
-    image: "https://images.unsplash.com/photo-1587393855524-087f83d95bc9?w=1000&q=80",
+    image: "/images/completed_projects/completed-project-06.jpeg",
     features: [
       "Anti-Bacterial Vinyl & Seamless Epoxy Flooring",
       "Centralized Medical Gas Pipeline System (MGPS) Ducts",
@@ -79,7 +79,7 @@ const services = [
     title: "Industrial PEB Warehouses & Factories",
     subtitle: "Pre-Engineered Steel Structures, Logistics Hubs & Manufacturing Units",
     desc: "Fast-track industrial engineering utilizing heavy-duty Pre-Engineered Steel (PEB) frameworks with large column-free spans, heavy machine-load concrete flooring (FM2/FM3), and industrial ventilation.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1000&q=80",
+    image: "/images/completed_projects/completed-project-07.jpeg",
     features: [
       "Clear-Span PEB Steel Trusses up to 40+ Meters without Center Pillars",
       "High-Load Laser-Screeded Concrete Flooring (5-Ton/sq.m)",
@@ -97,7 +97,7 @@ const services = [
     title: "2D Vastu Planning & 3D Elevation Design",
     subtitle: "Scientific Floor Plans, 360° Photorealistic Walkthroughs & Approvals",
     desc: "Visualize your project before laying a single brick. We produce scientific 2D floor plans harmonized with Vastu Shastra principles, photorealistic 3D architectural elevations, and municipal sanction drawings.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1000&q=80",
+    image: "/images/completed_projects/completed-project-04.jpeg",
     features: [
       "Scientific 2D Floor Layouts (100% Vastu Shastra Compliant)",
       "Photorealistic Day & Night 3D Architectural Exterior Elevations",
@@ -115,7 +115,7 @@ const services = [
     title: "Modular Interiors & Turnkey Renovation",
     subtitle: "Bespoke Modular Kitchens, False Ceilings & Structural Retrofitting",
     desc: "Transform bare concrete into bespoke luxury spaces. We provide custom factory-finished modular joinery, German-hardware kitchens, designer acoustic false ceilings, and structural remodeling.",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1000&q=80",
+    image: "/images/completed_projects/completed-project-03.jpeg",
     features: [
       "Factory-Made Acrylic & PU Finish Modular Kitchens with German Hardware",
       "Custom Floor-to-Ceiling Wardrobes with Soft-Close Fittings",

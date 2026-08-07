@@ -19,7 +19,7 @@ export default function ServicesHero() {
       {/* Background Architectural Image & Gradients */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/services/commercial-construction.jpg"
+          src="/images/completed_projects/completed-project-05.jpeg"
           alt="AKN Civil Engineering Services"
           fill
           priority
