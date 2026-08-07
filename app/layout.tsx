@@ -120,7 +120,7 @@ function LocalBusinessJsonLd() {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning className={cn(inter.variable, outfit.variable, "dark")}>
+    <html lang="en" suppressHydrationWarning className={cn(inter.variable, outfit.variable)}>
       <head>
         <LocalBusinessJsonLd />
       </head>

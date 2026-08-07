@@ -14,21 +14,21 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>("dark");
-  const [resolvedTheme, setResolvedTheme] = useState<"dark" | "light">("dark");
+  const [theme, setThemeState] = useState<Theme>("light");
+  const [resolvedTheme, setResolvedTheme] = useState<"dark" | "light">("light");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     const stored = localStorage.getItem("akn-theme") as Theme | null;
-    const initialTheme: Theme = stored || "dark";
+    const initialTheme: Theme = stored || "light";
     setThemeState(initialTheme);
     applyTheme(initialTheme);
   }, []);
 
   const applyTheme = (t: Theme) => {
     const root = document.documentElement;
-    let effective: "dark" | "light" = "dark";
+    let effective: "dark" | "light" = "light";
 
     if (t === "system") {
       effective = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
