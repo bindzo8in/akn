@@ -1,7 +1,7 @@
 export interface GalleryProject {
   id: string;
   title: string;
-  category: "Residential" | "Commercial" | "Hospital" | "Industrial" | "Interiors" | "3D Elevations";
+  category: "Ongoing Sites" | "Residential" | "Commercial" | "Hospital" | "Industrial" | "Interiors" | "3D Elevations";
   location: string;
   area: string;
   year: string;
@@ -24,19 +24,121 @@ export interface OnsiteVideo {
 }
 
 export const aknGalleryProjects: GalleryProject[] = [
+  // ── ONGOING SITES ──────────────────────────────────────────
   {
-    id: "akn-01",
+    id: "akn-ong-01",
+    title: "Live Active Villa Site Construction",
+    category: "Ongoing Sites",
+    location: "Dharmapuri District",
+    area: "3,400 Sq.Ft",
+    year: "2026 Active",
+    image: "/images/ongoing_projects/ongoing-site-01.jpeg",
+    gallery: [
+      "/images/ongoing_projects/ongoing-site-01.jpeg",
+      "/images/ongoing_projects/ongoing-site-02.jpeg",
+      "/images/ongoing_projects/ongoing-site-03.jpeg",
+      "/images/ongoing_projects/ongoing-site-04.jpeg",
+    ],
+    tag: "3,400 Sq.Ft • Live Civil Execution",
+    description:
+      "Active ongoing residential villa site undergoing structural framing, column reinforcement casting, and precision masonry under direct supervision of Er. Kumar.",
+    highlights: [
+      "Fe-550D TMT rebar structural column binding",
+      "Ultratech Super Cement M25 concrete casting",
+      "Daily engineer site audit and quality testing",
+      "Live client progress photo & video reporting",
+    ],
+    scope: "Architectural Planning, RCC Framing & Turnkey Civil Execution",
+  },
+  {
+    id: "akn-ong-02",
+    title: "Commercial Arcade Live Site Progress",
+    category: "Ongoing Sites",
+    location: "Hosur Corridor",
+    area: "11,200 Sq.Ft",
+    year: "2026 Active",
+    image: "/images/ongoing_projects/ongoing-site-05.jpeg",
+    gallery: [
+      "/images/ongoing_projects/ongoing-site-05.jpeg",
+      "/images/ongoing_projects/ongoing-site-06.jpeg",
+      "/images/ongoing_projects/ongoing-site-07.jpeg",
+      "/images/ongoing_projects/ongoing-site-08.jpeg",
+    ],
+    tag: "11,200 Sq.Ft • Commercial Slab Phase",
+    description:
+      "Ongoing multi-floor commercial complex active construction with shuttering scaffolding, beam reinforcement, and electrical conduit routing.",
+    highlights: [
+      "Heavy load commercial RCC beam casting",
+      "High-tensile steel shuttering & safety staging",
+      "Concealed electrical conduit placement",
+      "DTCP approved structural compliance",
+    ],
+    scope: "Commercial Approvals, Structural Steel & RCC Superstructure",
+  },
+  {
+    id: "akn-ong-03",
+    title: "Turnkey Residence Brickwork & Finishing",
+    category: "Ongoing Sites",
+    location: "Krishnagiri Town",
+    area: "2,800 Sq.Ft",
+    year: "2026 Active",
+    image: "/images/ongoing_projects/ongoing-site-09.jpeg",
+    gallery: [
+      "/images/ongoing_projects/ongoing-site-09.jpeg",
+      "/images/ongoing_projects/ongoing-site-10.jpeg",
+      "/images/ongoing_projects/ongoing-site-11.jpeg",
+      "/images/ongoing_projects/ongoing-site-12.jpeg",
+    ],
+    tag: "2,800 Sq.Ft • Masonry & Plastering Phase",
+    description:
+      "Ongoing luxury residence progressing through first-class red brick masonry, lintel level tie bands, and internal cement plastering.",
+    highlights: [
+      "Plumb-line verified red brick wall construction",
+      "Seismic lintel band RCC reinforcement",
+      "Waterproofing plaster additive application",
+      "Custom teakwood door frame anchoring",
+    ],
+    scope: "Superstructure Masonry, Plumbing, MEP & Finishing",
+  },
+  {
+    id: "akn-ong-04",
+    title: "Contemporary Villa Elevation & Terrace Work",
+    category: "Ongoing Sites",
+    location: "Pennagaram Road, Dharmapuri",
+    area: "3,100 Sq.Ft",
+    year: "2026 Active",
+    image: "/images/ongoing_projects/ongoing-site-13.jpeg",
+    gallery: [
+      "/images/ongoing_projects/ongoing-site-13.jpeg",
+      "/images/ongoing_projects/ongoing-site-14.jpeg",
+      "/images/ongoing_projects/ongoing-site-15.jpeg",
+      "/images/ongoing_projects/ongoing-site-16.jpeg",
+    ],
+    tag: "3,100 Sq.Ft • Terrace & Facade Phase",
+    description:
+      "Active site execution focusing on 3D elevation feature wall louvers, terrace parapet masonry, and Dr. Fixit chemical waterproofing.",
+    highlights: [
+      "5-layer elastomeric terrace leakproof treatment",
+      "Custom CNC balcony railing & louver fitting",
+      "Vastu-compliant entrance elevation crafting",
+    ],
+    scope: "3D Facade Realization, Waterproofing & Finishing",
+  },
+
+  // ── RESIDENTIAL VILLAS ─────────────────────────────────────
+  {
+    id: "akn-res-01",
     title: "Sri Lakshmi Contemporary Luxury Villa",
     category: "Residential",
     location: "Dharmapuri Town",
     area: "3,850 Sq.Ft",
     year: "2024",
-    image: "/images/projects/residential-luxury-villa.jpg",
+    image: "/images/completed_projects/completed-project-01.jpeg",
     gallery: [
-      "/images/projects/residential-luxury-villa.jpg",
-      "/images/projects/akn-project-02.jpg",
-      "/images/projects/akn-project-03.jpg",
-      "/images/projects/akn-project-04.jpg",
+      "/images/completed_projects/completed-project-01.jpeg",
+      "/images/completed_projects/completed-project-02.jpeg",
+      "/images/completed_projects/completed-project-03.jpeg",
+      "/images/completed_projects/completed-project-04.jpeg",
     ],
     tag: "3,850 Sq.Ft • Turnkey Duplex",
     description:
@@ -50,168 +152,18 @@ export const aknGalleryProjects: GalleryProject[] = [
     scope: "End-to-End Architectural Planning, DTCP Approval, Civil Construction & Luxury Interiors",
   },
   {
-    id: "akn-02",
-    title: "Grand Multi-Storey Commercial Complex",
-    category: "Commercial",
-    location: "Krishnagiri Junction",
-    area: "14,500 Sq.Ft",
-    year: "2024",
-    image: "/images/projects/commercial-complex.jpg",
-    gallery: [
-      "/images/projects/commercial-complex.jpg",
-      "/images/projects/akn-project-06.jpg",
-      "/images/projects/akn-project-07.jpg",
-      "/images/projects/akn-project-08.jpg",
-    ],
-    tag: "14,500 Sq.Ft • G+3 Commercial Hub",
-    description:
-      "Engineered for high footfall commercial retail and corporate offices with structural silicone glazing, heavy-duty RCC frame, high-capacity passenger lift shaft, and dedicated basement parking.",
-    highlights: [
-      "High-tensile structural framework engineered for seismic resilience",
-      "Heat-reflective structural glass facade & ACP exterior cladding",
-      "Underground sump with 50,000L fire safety water reservoir",
-      "Full compliance with local municipal building bylaws & fire NOC",
-    ],
-    scope: "Structural Engineering Design, Commercial Approvals, Civil Construction & Facade Execution",
-  },
-  {
-    id: "akn-03",
-    title: "Modern Minimalist Elevation Villa",
-    category: "Residential",
-    location: "Harur Road, Dharmapuri",
-    area: "2,600 Sq.Ft",
-    year: "2024",
-    image: "/images/projects/residential-duplex.jpg",
-    gallery: [
-      "/images/projects/residential-duplex.jpg",
-      "/images/projects/akn-project-10.jpg",
-      "/images/projects/akn-project-11.jpg",
-      "/images/projects/akn-project-12.jpg",
-    ],
-    tag: "2,600 Sq.Ft • Premium Residence",
-    description:
-      "A modern custom residence featuring cantilevered floating balconies, textured exterior plastering, smart ambient facade lighting, and open-concept living-dining spaces.",
-    highlights: [
-      "Precision RCC column framing with zero structural cracks",
-      "Custom CNC exterior louvers and weather-shield silicone paint",
-      "Granite staircase with seamless toughened glass railings",
-      "Concealed Finolex multi-strand wiring and Legrand modular switches",
-    ],
-    scope: "Architectural 3D Elevation, Structural Framing, MEP & Turnkey Finishing",
-  },
-  {
-    id: "akn-04",
-    title: "Multi-Specialty Healthcare Facility",
-    category: "Hospital",
-    location: "Dharmapuri Bypass",
-    area: "22,000 Sq.Ft",
-    year: "2023",
-    image: "/images/projects/hospital-building.jpg",
-    gallery: [
-      "/images/projects/hospital-building.jpg",
-      "/images/projects/akn-project-14.jpg",
-      "/images/projects/akn-project-15.jpg",
-      "/images/projects/akn-project-16.jpg",
-    ],
-    tag: "22,000 Sq.Ft • 50-Bed Hospital",
-    description:
-      "Engineered to stringent healthcare standards with cleanroom operation theatre infrastructure, medical gas pipeline systems (MGPS), reinforced radiography suites, and smooth bed-lift access.",
-    highlights: [
-      "NABH-compliant zoning and sterile corridor layouts",
-      "Anti-bacterial seamless vinyl flooring in ICU and OT wards",
-      "Dedicated 250 kVA silent diesel generator backup integration",
-      "Universal wheelchair & stretcher ramps with safety handrails",
-    ],
-    scope: "Healthcare Facility Civil Construction, Structural Glazing & MEP Execution",
-  },
-  {
-    id: "akn-05",
-    title: "Heavy Industrial PEB Warehouse & Factory",
-    category: "Industrial",
-    location: "Krishnagiri SIPCOT Corridor",
-    area: "32,000 Sq.Ft",
-    year: "2023",
-    image: "/images/projects/industrial-warehouse.jpg",
-    gallery: [
-      "/images/projects/industrial-warehouse.jpg",
-      "/images/projects/akn-project-18.jpg",
-      "/images/projects/akn-project-19.jpg",
-      "/images/projects/akn-project-20.jpg",
-    ],
-    tag: "32,000 Sq.Ft • PEB Steel Shed",
-    description:
-      "State-of-the-art pre-engineered building (PEB) structure with high-bay clear spans, laser-screed FM2 grade industrial concrete flooring, multiple hydraulic loading docks, and ridge ventilation.",
-    highlights: [
-      "High-grade ASTM steel trusses with Galvalume weatherproof roofing",
-      "Tremix laser-screed heavy-load concrete floor (5-ton/m² load capacity)",
-      "Automated rolling shutters and dock leveler integration",
-      "Complete perimeter stormwater drainage and industrial green buffer",
-    ],
-    scope: "PEB Steel Structural Design, Foundation Casting, Industrial Flooring & Handover",
-  },
-  {
-    id: "akn-06",
-    title: "Bespoke Luxury Residence Interiors",
-    category: "Interiors",
-    location: "Dharmapuri",
-    area: "3,200 Sq.Ft",
-    year: "2024",
-    image: "/images/projects/interior-luxury-fitout.jpg",
-    gallery: [
-      "/images/projects/interior-luxury-fitout.jpg",
-      "/images/projects/akn-project-22.jpg",
-      "/images/projects/akn-project-23.jpg",
-      "/images/projects/akn-project-24.jpg",
-    ],
-    tag: "Turnkey Interior Fitout",
-    description:
-      "Bespoke turnkey interior architecture featuring anti-fingerprint acrylic modular kitchen, magnetic track lighting, veneer wall panelling, and customized master bedroom walk-in wardrobes.",
-    highlights: [
-      "Hafele & Hettich German soft-close hardware throughout",
-      "Gyproc false ceilings with layered warm ambient COB spotlights",
-      "Custom PU finished TV unit with concealed wire conduits",
-      "Kalinga quartz kitchen countertop with high-grade sink",
-    ],
-    scope: "3D Interior Design, Space Planning, Custom Joinery & Lighting Installation",
-  },
-  {
-    id: "akn-07",
-    title: "Contemporary 3D Elevation & Frontage",
-    category: "3D Elevations",
-    location: "Palacode, Dharmapuri",
-    area: "2,900 Sq.Ft",
-    year: "2024",
-    image: "/images/projects/architectural-3d-elevation.jpg",
-    gallery: [
-      "/images/projects/architectural-3d-elevation.jpg",
-      "/images/projects/akn-project-26.jpg",
-      "/images/projects/akn-project-27.jpg",
-      "/images/projects/akn-project-28.jpg",
-    ],
-    tag: "3D Photorealistic Exterior",
-    description:
-      "Photorealistic 3D exterior design and subsequent exact execution featuring vertical louvers, stone cladding accents, warm LED profile lighting, and automated security gate.",
-    highlights: [
-      "100% execution matching approved 3D architectural renders",
-      "Natural stone exterior wall cladding with weather sealant",
-      "Toughened glass balcony railings with 304-grade stainless steel base",
-      "Landscaped garden entry with automated drip irrigation",
-    ],
-    scope: "3D Exterior Elevation, Structural Detailing & Turnkey Execution",
-  },
-  {
-    id: "akn-08",
+    id: "akn-res-02",
     title: "Engineered Duplex Villa at Kaveripattinam",
     category: "Residential",
     location: "Kaveripattinam, Krishnagiri",
     area: "2,450 Sq.Ft",
     year: "2024",
-    image: "/images/projects/akn-project-29.jpg",
+    image: "/images/completed_projects/completed-project-08.jpeg",
     gallery: [
-      "/images/projects/akn-project-29.jpg",
-      "/images/projects/akn-project-30.jpg",
-      "/images/projects/akn-project-31.jpg",
-      "/images/projects/akn-project-32.jpg",
+      "/images/completed_projects/completed-project-08.jpeg",
+      "/images/completed_projects/completed-project-07.jpeg",
+      "/images/completed_projects/completed-project-06.jpeg",
+      "/images/completed_projects/completed-project-05.jpeg",
     ],
     tag: "2,450 Sq.Ft • Turnkey Duplex",
     description:
@@ -225,18 +177,70 @@ export const aknGalleryProjects: GalleryProject[] = [
     scope: "Complete Turnkey Construction from Soil Testing to Key Handover",
   },
   {
-    id: "akn-09",
+    id: "akn-res-03",
+    title: "Modern Minimalist Elevation Villa",
+    category: "Residential",
+    location: "Harur Road, Dharmapuri",
+    area: "2,600 Sq.Ft",
+    year: "2024",
+    image: "/images/completed_projects/completed-project-02.jpeg",
+    gallery: [
+      "/images/completed_projects/completed-project-02.jpeg",
+      "/images/completed_projects/completed-project-03.jpeg",
+      "/images/completed_projects/completed-project-04.jpeg",
+      "/images/completed_projects/completed-project-01.jpeg",
+    ],
+    tag: "2,600 Sq.Ft • Premium Residence",
+    description:
+      "A modern custom residence featuring cantilevered floating balconies, textured exterior plastering, smart ambient facade lighting, and open-concept living-dining spaces.",
+    highlights: [
+      "Precision RCC column framing with zero structural cracks",
+      "Custom CNC exterior louvers and weather-shield silicone paint",
+      "Granite staircase with seamless toughened glass railings",
+      "Concealed Finolex multi-strand wiring and Legrand modular switches",
+    ],
+    scope: "Architectural 3D Elevation, Structural Framing, MEP & Turnkey Finishing",
+  },
+
+  // ── COMMERCIAL & RETAIL ────────────────────────────────────
+  {
+    id: "akn-com-01",
+    title: "Grand Multi-Storey Commercial Complex",
+    category: "Commercial",
+    location: "Krishnagiri Junction",
+    area: "14,500 Sq.Ft",
+    year: "2024",
+    image: "/images/completed_projects/completed-project-05.jpeg",
+    gallery: [
+      "/images/completed_projects/completed-project-05.jpeg",
+      "/images/completed_projects/completed-project-06.jpeg",
+      "/images/completed_projects/completed-project-07.jpeg",
+      "/images/completed_projects/completed-project-08.jpeg",
+    ],
+    tag: "14,500 Sq.Ft • G+3 Commercial Hub",
+    description:
+      "Engineered for high footfall commercial retail and corporate offices with structural silicone glazing, heavy-duty RCC frame, high-capacity passenger lift shaft, and dedicated basement parking.",
+    highlights: [
+      "High-tensile structural framework engineered for seismic resilience",
+      "Heat-reflective structural glass facade & ACP exterior cladding",
+      "Underground sump with 50,000L fire safety water reservoir",
+      "Full compliance with local municipal building bylaws & fire NOC",
+    ],
+    scope: "Structural Engineering Design, Commercial Approvals, Civil Construction & Facade Execution",
+  },
+  {
+    id: "akn-com-02",
     title: "Executive Commercial Showroom & Offices",
     category: "Commercial",
     location: "Dharmapuri Main Bazaar",
     area: "8,500 Sq.Ft",
     year: "2023",
-    image: "/images/projects/akn-project-33.jpg",
+    image: "/images/completed_projects/completed-project-05.jpeg",
     gallery: [
-      "/images/projects/akn-project-33.jpg",
-      "/images/projects/akn-project-34.jpg",
-      "/images/projects/akn-project-35.jpg",
-      "/images/projects/akn-project-36.jpg",
+      "/images/completed_projects/completed-project-05.jpeg",
+      "/images/completed_projects/completed-project-06.jpeg",
+      "/images/completed_projects/completed-project-07.jpeg",
+      "/images/completed_projects/completed-project-08.jpeg",
     ],
     tag: "8,500 Sq.Ft • Retail Showroom",
     description:
@@ -249,67 +253,205 @@ export const aknGalleryProjects: GalleryProject[] = [
     ],
     scope: "Commercial Renovation, Structural Strengthening & Interior Fitouts",
   },
+
+  // ── HOSPITAL & HEALTHCARE ──────────────────────────────────
+  {
+    id: "akn-hosp-01",
+    title: "Multi-Specialty Healthcare Facility",
+    category: "Hospital",
+    location: "Dharmapuri Bypass",
+    area: "22,000 Sq.Ft",
+    year: "2023",
+    image: "/images/completed_projects/completed-project-06.jpeg",
+    gallery: [
+      "/images/completed_projects/completed-project-06.jpeg",
+      "/images/completed_projects/completed-project-07.jpeg",
+      "/images/completed_projects/completed-project-08.jpeg",
+      "/images/completed_projects/completed-project-05.jpeg",
+    ],
+    tag: "22,000 Sq.Ft • 50-Bed Hospital",
+    description:
+      "Engineered to stringent healthcare standards with cleanroom operation theatre infrastructure, medical gas pipeline systems (MGPS), reinforced radiography suites, and smooth bed-lift access.",
+    highlights: [
+      "NABH-compliant zoning and sterile corridor layouts",
+      "Anti-bacterial seamless vinyl flooring in ICU and OT wards",
+      "Dedicated 250 kVA silent diesel generator backup integration",
+      "Universal wheelchair & stretcher ramps with safety handrails",
+    ],
+    scope: "Healthcare Facility Civil Construction, Structural Glazing & MEP Execution",
+  },
+
+  // ── INDUSTRIAL PEB ─────────────────────────────────────────
+  {
+    id: "akn-ind-01",
+    title: "Heavy Industrial PEB Warehouse & Factory",
+    category: "Industrial",
+    location: "Krishnagiri SIPCOT Corridor",
+    area: "32,000 Sq.Ft",
+    year: "2023",
+    image: "/images/completed_projects/completed-project-07.jpeg",
+    gallery: [
+      "/images/completed_projects/completed-project-07.jpeg",
+      "/images/completed_projects/completed-project-08.jpeg",
+      "/images/completed_projects/completed-project-05.jpeg",
+      "/images/completed_projects/completed-project-06.jpeg",
+    ],
+    tag: "32,000 Sq.Ft • PEB Steel Shed",
+    description:
+      "State-of-the-art pre-engineered building (PEB) structure with high-bay clear spans, laser-screed FM2 grade industrial concrete flooring, multiple hydraulic loading docks, and ridge ventilation.",
+    highlights: [
+      "High-grade ASTM steel trusses with Galvalume weatherproof roofing",
+      "Tremix laser-screed heavy-load concrete floor (5-ton/m² load capacity)",
+      "Automated rolling shutters and dock leveler integration",
+      "Complete perimeter stormwater drainage and industrial green buffer",
+    ],
+    scope: "PEB Steel Structural Design, Foundation Casting, Industrial Flooring & Handover",
+  },
+
+  // ── INTERIORS ──────────────────────────────────────────────
+  {
+    id: "akn-int-01",
+    title: "Bespoke Luxury Residence Interiors",
+    category: "Interiors",
+    location: "Dharmapuri",
+    area: "3,200 Sq.Ft",
+    year: "2024",
+    image: "/images/completed_projects/completed-project-03.jpeg",
+    gallery: [
+      "/images/completed_projects/completed-project-03.jpeg",
+      "/images/completed_projects/completed-project-04.jpeg",
+      "/images/completed_projects/completed-project-01.jpeg",
+      "/images/completed_projects/completed-project-02.jpeg",
+    ],
+    tag: "Turnkey Interior Fitout",
+    description:
+      "Bespoke turnkey interior architecture featuring anti-fingerprint acrylic modular kitchen, magnetic track lighting, veneer wall panelling, and customized master bedroom walk-in wardrobes.",
+    highlights: [
+      "Hafele & Hettich German soft-close hardware throughout",
+      "Gyproc false ceilings with layered warm ambient COB spotlights",
+      "Custom PU finished TV unit with concealed wire conduits",
+      "Kalinga quartz kitchen countertop with high-grade sink",
+    ],
+    scope: "3D Interior Design, Space Planning, Custom Joinery & Lighting Installation",
+  },
+
+  // ── 3D ELEVATIONS ──────────────────────────────────────────
+  {
+    id: "akn-3d-01",
+    title: "Contemporary 3D Elevation & Frontage",
+    category: "3D Elevations",
+    location: "Palacode, Dharmapuri",
+    area: "2,900 Sq.Ft",
+    year: "2024",
+    image: "/images/completed_projects/completed-project-04.jpeg",
+    gallery: [
+      "/images/completed_projects/completed-project-04.jpeg",
+      "/images/completed_projects/completed-project-01.jpeg",
+      "/images/completed_projects/completed-project-02.jpeg",
+      "/images/completed_projects/completed-project-03.jpeg",
+    ],
+    tag: "3D Photorealistic Exterior",
+    description:
+      "Photorealistic 3D exterior design and subsequent exact execution featuring vertical louvers, stone cladding accents, warm LED profile lighting, and automated security gate.",
+    highlights: [
+      "100% execution matching approved 3D architectural renders",
+      "Natural stone exterior wall cladding with weather sealant",
+      "Toughened glass balcony railings with 304-grade stainless steel base",
+      "Landscaped garden entry with automated drip irrigation",
+    ],
+    scope: "3D Exterior Elevation, Structural Detailing & Turnkey Execution",
+  },
 ];
 
 export const aknOnsiteVideos: OnsiteVideo[] = [
   {
-    id: "vid-01",
-    title: "RCC Column & Beam Superstructure Casting",
-    location: "Dharmapuri Main Town",
-    phase: "Civil Superstructure",
-    videoUrl: "/videos/rcc-column-beam-casting.mp4",
-    posterImage: "/images/projects/residential-luxury-villa.jpg",
+    id: "vid-ong-01",
+    title: "Live Active Concrete Pouring & Superstructure Vibration",
+    location: "Dharmapuri Ongoing Site",
+    phase: "Active Slab Casting",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-01.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-01.jpeg",
     description:
-      "Live footage of machine-mixed M25 concrete pouring, needle vibration, and structural engineer inspection ensuring 0% honeycombing.",
+      "Live footage recording active machine-mixed concrete pouring and mechanical vibration during ongoing slab casting.",
+  },
+  {
+    id: "vid-ong-02",
+    title: "Ongoing Column Rebar Binding & Alignment Check",
+    location: "Krishnagiri Active Construction",
+    phase: "Column Framing",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-02.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-02.jpeg",
+    description:
+      "Direct site recording of chief civil engineer verifying column stirrup spacing and plumb alignment.",
+  },
+  {
+    id: "vid-ong-03",
+    title: "Substructure Trench Excavation & PCC Bedding",
+    location: "Hosur Belt Site",
+    phase: "Substructure Phase",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-03.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-03.jpeg",
+    description:
+      "Heavy JCB machinery excavation and plain cement concrete (PCC) foundation bedding for ongoing villa project.",
+  },
+  {
+    id: "vid-ong-04",
+    title: "Live Brickwork Masonry & Mortar Quality Audit",
+    location: "Dharmapuri Site",
+    phase: "Superstructure Masonry",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-04.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-04.jpeg",
+    description:
+      "Artisan bricklaying with 1:6 cement-sand mortar ratio inspection and door frame anchoring.",
+  },
+  {
+    id: "vid-ong-05",
+    title: "Roof Shuttering & Electrical Conduit Placement",
+    location: "Harur Road Site",
+    phase: "Slab Shuttering",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-05.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-05.jpeg",
+    description:
+      "Plywood shuttering staging audit with PVC electrical conduit layout before slab rebar binding.",
+  },
+  {
+    id: "vid-ong-06",
+    title: "Turnkey Finishing & Interior Plastering Inspection",
+    location: "Palacode Ongoing Project",
+    phase: "Finishing Phase",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-06.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-06.jpeg",
+    description:
+      "Smooth wall plastering application, edge angle installation, and client progress inspection.",
+  },
+  {
+    id: "vid-ong-07",
+    title: "Live Structural Load Testing & Quality Walkthrough",
+    location: "Dharmapuri Headquarters Site",
+    phase: "Quality Audit",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-07.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-07.jpeg",
+    description:
+      "Comprehensive structural check, concrete cube compression test record, and site walkthrough.",
+  },
+  {
+    id: "vid-01",
+    title: "Onsite Construction & Structural Execution Footage",
+    location: "Dharmapuri Site Project",
+    phase: "Civil Superstructure",
+    videoUrl: "/videos/completed_projects/completed-site-video-01.mp4",
+    posterImage: "/images/completed_projects/completed-project-01.jpeg",
+    description:
+      "Direct recorded on-site footage of active RCC structural framing, concrete vibration, and engineer site supervision.",
   },
   {
     id: "vid-02",
-    title: "Roof Slab Shuttering & Fe-550D Rebar Binding",
-    location: "Krishnagiri Project Site",
-    phase: "Roof Slab Execution",
-    videoUrl: "/videos/roof-slab-concreting.mp4",
-    posterImage: "/images/projects/commercial-complex.jpg",
+    title: "Turnkey Site Progress & Finishing Supervision",
+    location: "Krishnagiri Site Location",
+    phase: "Finishing & Quality Inspection",
+    videoUrl: "/videos/completed_projects/completed-site-video-02.mp4",
+    posterImage: "/images/completed_projects/completed-project-02.jpeg",
     description:
-      "Quality audit of two-way slab rebar spacing, electrical conduit laying, and cover block placement prior to continuous concrete casting.",
-  },
-  {
-    id: "vid-03",
-    title: "Foundation Excavation & Certified Soil Compaction",
-    location: "Harur Road, Dharmapuri",
-    phase: "Substructure Phase",
-    videoUrl: "/videos/foundation-excavation.mp4",
-    posterImage: "/images/projects/residential-duplex.jpg",
-    description:
-      "Heavy equipment trench excavation, PCC bed casting, and certified anti-termite subterranean soil treatment.",
-  },
-  {
-    id: "vid-04",
-    title: "Precision Brick Masonry & Lintel Level Casting",
-    location: "Palacode Site",
-    phase: "Masonry & Framing",
-    videoUrl: "/videos/brick-masonry-execution.mp4",
-    posterImage: "/images/projects/architectural-3d-elevation.jpg",
-    description:
-      "First-class wire-cut brick masonry with plumb-line verification, door-window lintel casting, and seismic tie bands.",
-  },
-  {
-    id: "vid-05",
-    title: "Terrace Waterproofing & Multi-Layer Chemical Coating",
-    location: "Dharmapuri Villa",
-    phase: "Waterproofing & Protection",
-    videoUrl: "/videos/terrace-waterproofing.mp4",
-    posterImage: "/images/projects/akn-project-29.jpg",
-    description:
-      "Comprehensive Dr. Fixit 5-layer elastomeric polymer coating and ponding water leak testing over 72 hours.",
-  },
-  {
-    id: "vid-06",
-    title: "Turnkey Finishing & Interior Modular Assembly",
-    location: "Krishnagiri Luxury Residence",
-    phase: "Finishing & Handover",
-    videoUrl: "/videos/turnkey-finishing-walkthrough.mp4",
-    posterImage: "/images/projects/interior-luxury-fitout.jpg",
-    description:
-      "Final touch-ups, Italian marble floor polishing, false ceiling illumination test, and client walkthrough celebration.",
+      "Live site documentation of masonry alignment, lintel level inspection, and turnkey finishing progress.",
   },
 ];

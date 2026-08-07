@@ -2,8 +2,11 @@ import { createEnv } from "@t3-oss/env-nextjs";
 import { z } from "zod";
 
 export const env = createEnv({
-  /* ── Server-only variables ────────────────────────────── */
-  server: {},
+  server: {
+    RESEND_API_KEY: z.string(),
+    RESEND_FROM_EMAIL: z.string().optional().default("onboarding@resend.dev"),
+    RESEND_TO_EMAIL: z.string().email().optional().default("Aknconstruction2016@gmail.com"),
+  },
 
   /* ── Client-side variables (NEXT_PUBLIC_*) ────────────── */
   client: {
@@ -55,5 +58,8 @@ export const env = createEnv({
     NEXT_PUBLIC_WORKING_HOURS_SUNDAY: process.env.NEXT_PUBLIC_WORKING_HOURS_SUNDAY,
     NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
     NEXT_PUBLIC_FOUNDED_YEAR: process.env.NEXT_PUBLIC_FOUNDED_YEAR,
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
+    RESEND_FROM_EMAIL: process.env.RESEND_FROM_EMAIL,
+    RESEND_TO_EMAIL: process.env.RESEND_TO_EMAIL,
   },
 });

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { Phone, Mail, MapPin, Menu, X } from "lucide-react";
@@ -190,15 +191,31 @@ export default function Navbar() {
             {/* Logo */}
             <Link
               href="/"
-              className="group flex items-center gap-2"
+              className="group flex items-center gap-2.5"
               onClick={() => setIsMobileOpen(false)}
             >
-              <span className="text-xl font-bold tracking-tight font-heading">
-                <span className={isScrolled ? "text-teal" : "text-white"}>AKN</span>
-                <span className={`ml-1 text-xs font-normal tracking-wider uppercase ${isScrolled ? "text-muted-foreground" : "text-white/70"}`}>
-                  Construction
+              <div className="relative size-10 overflow-hidden rounded-xl bg-white/90 p-1 shadow-sm border border-white/20 transition-transform group-hover:scale-105">
+                <Image
+                  src="/images/logo.png"
+                  alt="AKN Construction Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <div className="flex flex-col justify-center leading-none">
+                <span className="font-heading text-base sm:text-lg font-bold tracking-tight">
+                  <span className="text-gold">A</span>
+                  <span className={isScrolled ? "text-teal" : "text-white"}>K</span>
+                  <span className="text-gold">N</span>
+                  <span className={`ml-1 text-xs font-semibold tracking-tight ${isScrolled ? "text-foreground" : "text-white"}`}>
+                    Construction & Interiors
+                  </span>
                 </span>
-              </span>
+                <span className={`text-[10px] font-bold tracking-wider uppercase mt-1 ${isScrolled ? "text-teal" : "text-gold"}`}>
+                  Engineer / Contractors
+                </span>
+              </div>
             </Link>
 
             {/* Desktop Links */}
@@ -273,9 +290,27 @@ export default function Navbar() {
         }`}
       >
         <div className="flex items-center justify-between px-4 py-4 border-b border-border/50">
-          <span className="text-xl font-bold font-heading text-teal">
-            AKN <span className="text-xs font-normal text-muted-foreground uppercase">Construction</span>
-          </span>
+          <div className="flex items-center gap-2.5">
+            <div className="relative size-9 overflow-hidden rounded-xl bg-muted p-1 border border-border">
+              <Image
+                src="/images/logo.png"
+                alt="AKN Construction Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
+            <div className="flex flex-col justify-center leading-none">
+              <span className="font-heading text-base font-bold text-foreground">
+                <span className="text-gold">A</span>
+                <span className="text-teal">K</span>
+                <span className="text-gold">N</span>{" "}
+                <span className="text-xs font-semibold text-foreground">Construction & Interiors</span>
+              </span>
+              <span className="text-[10px] font-bold tracking-wider text-teal uppercase mt-0.5">
+                Engineer / Contractors
+              </span>
+            </div>
+          </div>
           <div className="flex items-center gap-2">
             <ThemeToggle isScrolled={true} />
             <button

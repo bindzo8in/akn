@@ -29,10 +29,13 @@ export default function OnsiteVideoShowcase() {
     return () => observer.disconnect();
   }, []);
 
-  // Lock scroll when video modal is active
+  // Lock scroll & mute video by default when video modal is active
   useEffect(() => {
     if (selectedVideo) {
       document.body.style.overflow = "hidden";
+      if (videoPlayerRef.current) {
+        videoPlayerRef.current.muted = true;
+      }
     } else {
       document.body.style.overflow = "unset";
     }
@@ -74,7 +77,7 @@ export default function OnsiteVideoShowcase() {
 
           <div className="inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-2 text-xs font-semibold text-muted-foreground shadow-sm">
             <Film className="size-4 text-gold" />
-            <span>6 Direct Construction Recordings</span>
+            <span>{aknOnsiteVideos.length} Direct Construction Recordings</span>
           </div>
         </div>
 
@@ -167,6 +170,8 @@ export default function OnsiteVideoShowcase() {
                 src={selectedVideo.videoUrl}
                 controls
                 autoPlay
+                muted
+                playsInline
                 className="h-full w-full object-contain"
               />
             </div>

@@ -14,7 +14,7 @@ import {
   Sparkles,
 } from "lucide-react";
 
-const filters = ["All", "Residential", "Commercial", "Hospital", "Industrial", "Interiors"] as const;
+const filters = ["All", "Ongoing Sites", "Residential", "Commercial", "Hospital", "Industrial", "Interiors"] as const;
 
 interface Project {
   title: string;
@@ -34,7 +34,7 @@ const projects: Project[] = [
     category: "Residential",
     tag: "3,850 Sq.Ft • Turnkey Duplex",
     desc: "Complete RCC framing, Italian marble flooring, landscaped courtyard, and custom 3D elevation.",
-    image: "/images/projects/residential-luxury-villa.jpg",
+    image: "/images/completed_projects/completed-project-01.jpeg",
     scope: "End-to-End Architectural Planning, Structural Execution & Interior Design",
     features: ["100% Vastu Compliant", "Double Height Living Area", "Italian Marble Flooring", "Smart Home Automation"],
   },
@@ -44,7 +44,7 @@ const projects: Project[] = [
     category: "Commercial",
     tag: "14,500 Sq.Ft • G+3 Commercial Hub",
     desc: "Engineered for high footfall with structural glazing facade, ACP cladding, and basement parking.",
-    image: "/images/projects/commercial-complex.jpg",
+    image: "/images/completed_projects/completed-project-05.jpeg",
     scope: "Commercial Complex Structural Framing & Modern Facade Glazing",
     features: ["Structural Glass Facade", "High Load RCC Columns", "Dedicated Basement Parking", "Fire Safety Integration"],
   },
@@ -54,7 +54,7 @@ const projects: Project[] = [
     category: "Hospital",
     tag: "22,000 Sq.Ft • 50-Bed Facility",
     desc: "Medical gas pipeline integration, sterile OT suites, ICU infrastructure, and diagnostic wings.",
-    image: "/images/projects/hospital-building.jpg",
+    image: "/images/completed_projects/completed-project-06.jpeg",
     scope: "NABH-Compliant Healthcare Facility Civil & MEP Execution",
     features: ["Sterile Modular OT Suite", "Medical Gas Pipeline (MGPS)", "Reinforced Radiography Rooms", "Emergency Ramp Access"],
   },
@@ -64,7 +64,7 @@ const projects: Project[] = [
     category: "Industrial",
     tag: "32,000 Sq.Ft • High-Bay Storage",
     desc: "Heavy-duty laser-screed concrete flooring, long-span PEB steel trusses, and loading docks.",
-    image: "/images/projects/industrial-warehouse.jpg",
+    image: "/images/completed_projects/completed-project-07.jpeg",
     scope: "Pre-Engineered Steel Structural Shed & Laser Screed Flooring",
     features: ["Clear-Span PEB Steel Framing", "Laser-Screed Heavy Floor (FM2)", "Multiple Loading Bays", "Rainwater Harvesting Catchment"],
   },
@@ -74,7 +74,7 @@ const projects: Project[] = [
     category: "Interiors",
     tag: "Turnkey Interior Fitout",
     desc: "German hardware modular kitchen, false ceilings with magnetic track lights, and custom veneer wardrobes.",
-    image: "/images/projects/interior-luxury-fitout.jpg",
+    image: "/images/completed_projects/completed-project-03.jpeg",
     scope: "Luxury Residential Interior Architecture & Custom Joinery",
     features: ["Anti-Fingerprint Acrylic Kitchen", "Magnetic Track Ambient Lighting", "Custom Teak Wood Joinery", "Acoustic Wall Paneling"],
   },
@@ -84,7 +84,7 @@ const projects: Project[] = [
     category: "Residential",
     tag: "2,600 Sq.Ft • Vastu Compliant",
     desc: "100% Vastu-oriented 2D layout with modern double-height living room and cantilevered balconies.",
-    image: "/images/projects/residential-duplex.jpg",
+    image: "/images/completed_projects/completed-project-02.jpeg",
     scope: "Turnkey Design, Plan Approval, Construction & Handover",
     features: ["East-Facing Vastu Layout", "Cantilever Floating Balcony", "Weatherproof Texture Paint", "Solar Rooftop Ready"],
   },
@@ -97,6 +97,7 @@ export default function Portfolio() {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const filtered = active === "All" ? projects : projects.filter((p) => p.category === active);
+  const displayedProjects = filtered.slice(0, 3);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -181,7 +182,7 @@ export default function Portfolio() {
 
         {/* Project grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((proj, i) => (
+          {displayedProjects.map((proj, i) => (
             <div
               key={proj.title}
               data-cursor="view"
@@ -239,13 +240,13 @@ export default function Portfolio() {
           ))}
         </div>
 
-        {/* View All Projects Link to Portfolio Page */}
+        {/* 'Show More' Redirect to Portfolio Page */}
         <div className="mt-12 text-center">
           <Link
             href="/portfolio"
-            className="inline-flex items-center gap-2 rounded-xl border border-teal/40 bg-teal/10 px-6 py-3 text-sm font-bold text-teal transition-all hover:bg-teal hover:text-white shadow-sm"
+            className="inline-flex items-center justify-center gap-2 rounded-2xl bg-teal px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-teal/20 transition-all hover:bg-teal/90 hover:scale-105 hover:shadow-xl hover:shadow-teal/30"
           >
-            Explore Complete 50+ Project Portfolio
+            <span>Show More Projects</span>
             <ArrowUpRight className="size-4" />
           </Link>
         </div>

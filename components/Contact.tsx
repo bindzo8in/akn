@@ -17,7 +17,18 @@ const projectTypes = [
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    location: "",
+    projectType: "",
+    message: "",
+  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -42,10 +53,33 @@ export default function Contact() {
     };
   }, []);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 5000);
+    setIsSubmitting(true);
+    setErrorMessage(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || "Failed to send inquiry email.");
+      }
+
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 6000);
+    } catch (err: unknown) {
+      console.error("Contact submit error:", err);
+      setErrorMessage(
+        err instanceof Error ? err.message : "Submission failed. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -187,6 +221,12 @@ export default function Contact() {
                 Fill in your details below. Our civil engineer will call you within 24 hours.
               </p>
 
+              {errorMessage && (
+                <div className="mb-6 rounded-xl border border-destructive/30 bg-destructive/10 p-4 text-xs font-semibold text-destructive">
+                  {errorMessage}
+                </div>
+              )}
+
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
                   <label htmlFor="contact-name" className="mb-2 block text-xs font-semibold text-foreground">
@@ -196,6 +236,8 @@ export default function Contact() {
                     id="contact-name"
                     type="text"
                     required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-teal focus:ring-2 focus:ring-teal/20"
                     placeholder="Enter your name"
                   />
@@ -208,6 +250,8 @@ export default function Contact() {
                     id="contact-phone"
                     type="tel"
                     required
+                    value={formData.phone}
+                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-teal focus:ring-2 focus:ring-teal/20"
                     placeholder="+91 99435 40336"
                   />
@@ -219,6 +263,8 @@ export default function Contact() {
                   <input
                     id="contact-email"
                     type="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-teal focus:ring-2 focus:ring-teal/20"
                     placeholder="name@example.com"
                   />
@@ -231,6 +277,8 @@ export default function Contact() {
                     id="contact-location"
                     type="text"
                     required
+                    value={formData.location}
+                    onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                     className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-teal focus:ring-2 focus:ring-teal/20"
                     placeholder="e.g. Dharmapuri Town, Krishnagiri"
                   />
@@ -243,6 +291,8 @@ export default function Contact() {
                 </label>
                 <select
                   id="contact-type"
+                  value={formData.projectType}
+                  onChange={(e) => setFormData({ ...formData, projectType: e.target.value })}
                   className="w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-teal focus:ring-2 focus:ring-teal/20"
                 >
                   <option value="">Select your required service</option>
@@ -259,6 +309,8 @@ export default function Contact() {
                 <textarea
                   id="contact-message"
                   rows={4}
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full resize-none rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none transition-colors focus:border-teal focus:ring-2 focus:ring-teal/20"
                   placeholder="Share details like built-up area (sq.ft), number of floors, timeline, or specific Vastu requirements..."
                 />
@@ -266,10 +318,12 @@ export default function Contact() {
 
               <button
                 type="submit"
-                disabled={submitted}
+                disabled={isSubmitting || submitted}
                 className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-teal px-8 py-3.5 text-sm font-bold text-white shadow-md shadow-teal/20 transition-all hover:bg-teal/90 hover:shadow-lg hover:shadow-teal/30 disabled:opacity-60 sm:w-auto"
               >
-                {submitted ? (
+                {isSubmitting ? (
+                  <span>Sending Inquiry...</span>
+                ) : submitted ? (
                   <span className="flex items-center gap-2">
                     <CheckCircle2 className="size-4" />
                     Consultation Request Received!

@@ -59,6 +59,10 @@ export const metadata: Metadata = {
     title: `${env.NEXT_PUBLIC_BUSINESS_NAME} — ${env.NEXT_PUBLIC_TAGLINE}`,
     description: `End-to-end construction, architectural planning & interior design in ${env.NEXT_PUBLIC_LOCATION_PRIMARY} – ${env.NEXT_PUBLIC_LOCATION_SECONDARY}.`,
   },
+  icons: {
+    icon: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
   robots: {
     index: true,
     follow: true,
