@@ -100,7 +100,7 @@ export default function PortfolioBeforeAfter() {
           {/* AFTER Image (Full Background) */}
           <div className="absolute inset-0">
             <Image
-              src="/images/about/timeline-2018-commercial.png"
+              src="/images/projects/turnkey-masterpiece-after.png"
               alt="Completed Turnkey Landmark"
               fill
               className="object-cover"
@@ -117,7 +117,7 @@ export default function PortfolioBeforeAfter() {
             style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
           >
             <Image
-              src="/images/about/timeline-2020-studio.png"
+              src="/images/projects/raw-foundation-before.png"
               alt="Raw RCC Foundation & Columns"
               fill
               className="object-cover"

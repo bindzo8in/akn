@@ -20,7 +20,7 @@ const services = [
     title: "Commercial Projects",
     headline: "Retail Complexes, Offices & Arcades",
     desc: "Multi-storey commercial buildings engineered for high footfall and durability. Featuring contemporary structural glazing, ACP facade cladding, and optimized internal commercial spaces.",
-    image: "/images/contact/contact-hero-bg.jpg",
+    image: "/images/completed_projects/completed-project-05.jpeg",
     tags: ["Shopping Arcades", "Corporate Offices", "Showrooms"],
   },
   {
@@ -29,7 +29,7 @@ const services = [
     title: "Hospital Infrastructure",
     headline: "Healthcare Centers & Diagnostic Labs",
     desc: "Specialized hospital and clinic construction complying with healthcare workflow standards, medical gas pipeline provisions, hygienic finishes, and heavy diagnostic equipment load requirements.",
-    image: "/images/hero/hero-architectural-3d.jpg",
+    image: "/images/services/service-healthcare-hospital.jpg",
     tags: ["Hospitals", "Clinics", "Diagnostic Labs"],
   },
   {
@@ -38,7 +38,7 @@ const services = [
     title: "Industrial Projects",
     headline: "PEB Steel Buildings & Heavy Warehouses",
     desc: "Pre-Engineered Building (PEB) steel structures, industrial factories, and logistic warehouses built with heavy load-bearing concrete flooring and long-span roofing systems.",
-    image: "/images/hero/hero-interior-living.jpg",
+    image: "/images/services/service-industrial-peb.jpg",
     tags: ["PEB Sheds", "Warehouses", "Factories"],
   },
   {
@@ -47,7 +47,7 @@ const services = [
     title: "Renovation Works",
     headline: "Structural Retrofitting & Modern Facelifts",
     desc: "Transforming existing properties through structural strengthening, additional floor additions, contemporary elevation modernization, and advanced leak-proof waterproofing.",
-    image: "/images/services/commercial-construction.jpg",
+    image: "/images/projects/turnkey-masterpiece-after.png",
     tags: ["Elevation Remodeling", "Floor Additions", "Waterproofing"],
   },
   {
@@ -56,7 +56,7 @@ const services = [
     title: "2D & 3D Vastu Planning",
     headline: "Floor Plans, 3D Elevation & Sanctions",
     desc: "Scientific Vastu-compliant 2D architectural blueprints, photorealistic 3D exterior elevations, walkthroughs, and municipal approval sanction drawings.",
-    image: "/images/interiors/interior-project-01.jpeg",
+    image: "/images/services/service-3d-elevation.jpg",
     tags: ["Vastu Floor Plans", "3D Elevations", "Sanction Drawings"],
   },
   {
@@ -65,7 +65,7 @@ const services = [
     title: "Luxury Modular Interiors & Turnkey Fitouts",
     headline: "Bespoke Modular Kitchens, Wardrobes & Living Spaces",
     desc: "End-to-end modular interior design & execution using 100% BWP Marine Plywood, Hafele/Hettich German soft-close hardware, Gyproc false ceilings with indirect LED cove lighting, custom PU TV media walls, and acoustic wall panelling.",
-    image: "/images/interiors/interior-project-03.jpeg",
+    image: "/images/interiors/interior-project-01.jpeg",
     tags: ["Modular Kitchens", "Walk-in Wardrobes", "False Ceilings", "TV Media Walls", "Quartz Surfaces"],
   },
 ];

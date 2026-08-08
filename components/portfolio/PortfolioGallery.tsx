@@ -3,7 +3,18 @@
 import { useState, useMemo, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Calendar, X, CheckCircle2, PhoneCall, Sparkles, ArrowRight } from "lucide-react";
+import {
+  MapPin,
+  Calendar,
+  X,
+  CheckCircle2,
+  PhoneCall,
+  Sparkles,
+  ArrowRight,
+  Video,
+  Layers,
+  Cpu,
+} from "lucide-react";
 import { aknGalleryProjects, GalleryProject } from "@/lib/aknGalleryData";
 import { env } from "@/app/env";
 
@@ -22,6 +33,7 @@ type CategoryFilter = (typeof categories)[number];
 export default function PortfolioGallery() {
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>("All Projects");
   const [selectedProject, setSelectedProject] = useState<GalleryProject | null>(null);
+  const [activeMedia, setActiveMedia] = useState<{ type: "image" | "video"; url: string } | null>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -38,6 +50,15 @@ export default function PortfolioGallery() {
       document.body.style.overflow = "unset";
     };
   }, [selectedProject]);
+
+  const openProjectModal = (proj: GalleryProject) => {
+    setSelectedProject(proj);
+    if (proj.videos && proj.videos.length > 0) {
+      setActiveMedia({ type: "video", url: proj.videos[0] });
+    } else {
+      setActiveMedia({ type: "image", url: proj.image });
+    }
+  };
 
   const filteredProjects = useMemo(() => {
     if (activeCategory === "All Projects") return aknGalleryProjects;
@@ -94,7 +115,7 @@ export default function PortfolioGallery() {
               key={project.id}
               data-cursor="image"
               data-cursor-label="VIEW"
-              onClick={() => setSelectedProject(project)}
+              onClick={() => openProjectModal(project)}
               className="group cursor-pointer overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-teal/50 hover:shadow-xl hover:shadow-teal/10 flex flex-col justify-between"
             >
               <div>
@@ -114,9 +135,17 @@ export default function PortfolioGallery() {
                     {project.category}
                   </div>
 
-                  {/* Year Tag */}
-                  <div className="absolute right-4 top-4 rounded-lg bg-teal/90 px-3 py-1 text-xs font-bold text-white shadow-sm">
-                    {project.year}
+                  {/* Year & Media Indicators */}
+                  <div className="absolute right-4 top-4 flex gap-1.5">
+                    {project.videos && project.videos.length > 0 && (
+                      <span className="flex items-center gap-1 rounded-lg bg-teal px-2.5 py-1 text-xs font-bold text-white shadow-sm">
+                        <Video className="size-3" />
+                        <span>Demo</span>
+                      </span>
+                    )}
+                    <div className="rounded-lg bg-black/60 backdrop-blur-md px-3 py-1 text-xs font-bold text-white shadow-sm border border-white/10">
+                      {project.year}
+                    </div>
                   </div>
 
                   {/* Area Tag */}
@@ -124,18 +153,34 @@ export default function PortfolioGallery() {
                     <span className="text-xs font-semibold text-gold tracking-wide">
                       {project.tag}
                     </span>
-                    <h3 className="mt-1 font-heading text-lg sm:text-xl font-bold leading-snug">
+                    <h3 className="mt-1 font-heading text-lg sm:text-xl font-bold leading-snug line-clamp-2">
                       {project.title}
                     </h3>
                   </div>
                 </div>
 
                 {/* Body Content */}
-                <div className="p-6 space-y-3">
+                <div className="p-6 space-y-4">
                   <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed line-clamp-3">
-                    {project.description}
+                    {project.shortDescription || project.description}
                   </p>
 
+                  {/* Verified Tech Badges */}
+                  {project.technologies && project.technologies.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.technologies.slice(0, 3).map((tech, i) => (
+                        <span
+                          key={i}
+                          className="inline-flex items-center gap-1 rounded-md bg-teal/10 px-2.5 py-1 text-[11px] font-semibold text-teal border border-teal/20"
+                        >
+                          <Cpu className="size-3" />
+                          <span>{tech}</span>
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  {/* Highlights */}
                   <div className="pt-2 flex flex-wrap gap-1.5">
                     {project.highlights.slice(0, 2).map((hl, i) => (
                       <span
@@ -157,7 +202,7 @@ export default function PortfolioGallery() {
                   <span>{project.location}</span>
                 </div>
                 <span className="flex items-center gap-1 font-bold text-foreground group-hover:text-teal transition-colors">
-                  Inspect Project Specs →
+                  Inspect Project Specs &rarr;
                 </span>
               </div>
             </div>
@@ -170,7 +215,8 @@ export default function PortfolioGallery() {
             Want to See Live On-Site Progress for Your Plot?
           </h3>
           <p className="mx-auto mt-2 max-w-xl text-sm text-muted-foreground">
-            Schedule a site visit with Chief Civil Engineer {env.NEXT_PUBLIC_ENGINEER_NAME} in {env.NEXT_PUBLIC_LOCATION_PRIMARY} or {env.NEXT_PUBLIC_LOCATION_SECONDARY}.
+            Schedule a site visit with Chief Civil Engineer {env.NEXT_PUBLIC_ENGINEER_NAME} in{" "}
+            {env.NEXT_PUBLIC_LOCATION_PRIMARY} or {env.NEXT_PUBLIC_LOCATION_SECONDARY}.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             <Link
@@ -204,21 +250,33 @@ export default function PortfolioGallery() {
             {/* Close Button */}
             <button
               onClick={() => setSelectedProject(null)}
-              className="absolute right-4 top-4 z-10 rounded-full bg-background/80 p-2 text-foreground shadow-md backdrop-blur-md transition-all hover:bg-muted hover:scale-110"
+              className="absolute right-4 top-4 z-20 rounded-full bg-background/80 p-2 text-foreground shadow-md backdrop-blur-md transition-all hover:bg-muted hover:scale-110"
               aria-label="Close modal"
             >
               <X className="size-5" />
             </button>
 
-            {/* Modal Hero Image */}
-            <div className="relative h-64 sm:h-96 w-full overflow-hidden rounded-2xl bg-muted shadow-inner">
-              <Image
-                src={selectedProject.image}
-                alt={selectedProject.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 900px"
-              />
+            {/* Modal Media View */}
+            <div className="relative h-64 sm:h-96 w-full overflow-hidden rounded-2xl bg-black">
+              {activeMedia?.type === "video" ? (
+                <video
+                  src={activeMedia.url}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  poster={selectedProject.image}
+                  className="h-full w-full object-contain"
+                />
+              ) : (
+                <Image
+                  src={activeMedia?.url || selectedProject.image}
+                  alt={selectedProject.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 900px"
+                />
+              )}
+
               <div className="absolute top-4 left-4 flex gap-2">
                 <span className="rounded-full bg-teal px-3.5 py-1 text-xs font-bold text-white shadow-md">
                   {selectedProject.category}
@@ -229,21 +287,40 @@ export default function PortfolioGallery() {
               </div>
             </div>
 
-            {/* Project Gallery Thumbnails */}
-            {selectedProject.gallery && selectedProject.gallery.length > 0 && (
-              <div className="mt-4 grid grid-cols-4 gap-3">
-                {selectedProject.gallery.map((img, idx) => (
-                  <div
-                    key={idx}
-                    className="relative h-20 w-full overflow-hidden rounded-xl bg-muted border border-border/60 hover:border-teal transition-all"
+            {/* Media Selector Strip */}
+            {(selectedProject.gallery.length > 0 || (selectedProject.videos && selectedProject.videos.length > 0)) && (
+              <div className="mt-4 flex items-center gap-2 overflow-x-auto pb-2">
+                {selectedProject.videos?.map((vid, vIdx) => (
+                  <button
+                    key={`v-${vIdx}`}
+                    onClick={() => setActiveMedia({ type: "video", url: vid })}
+                    className={`relative flex items-center gap-1.5 shrink-0 rounded-xl px-3 py-1.5 text-xs font-bold transition-all ${
+                      activeMedia?.type === "video" && activeMedia.url === vid
+                        ? "bg-teal text-white shadow-md"
+                        : "border border-border bg-muted text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    <Video className="size-3.5" />
+                    <span>Watch Video {vIdx + 1}</span>
+                  </button>
+                ))}
+                {selectedProject.gallery.map((img, gIdx) => (
+                  <button
+                    key={`g-${gIdx}`}
+                    onClick={() => setActiveMedia({ type: "image", url: img })}
+                    className={`relative h-14 w-20 shrink-0 overflow-hidden rounded-xl border-2 transition-all ${
+                      activeMedia?.type === "image" && activeMedia.url === img
+                        ? "border-teal scale-105 shadow-md"
+                        : "border-border opacity-70 hover:opacity-100"
+                    }`}
                   >
                     <Image
                       src={img}
-                      alt={`${selectedProject.title} detail ${idx + 1}`}
+                      alt={`${selectedProject.title} detail ${gIdx + 1}`}
                       fill
                       className="object-cover"
                     />
-                  </div>
+                  </button>
                 ))}
               </div>
             )}
@@ -262,7 +339,7 @@ export default function PortfolioGallery() {
                 </div>
                 <div className="flex items-center gap-2 text-xs font-bold text-gold bg-gold/10 px-3 py-1.5 rounded-lg border border-gold/30 self-start sm:self-auto">
                   <Sparkles className="size-4" />
-                  <span>AKN Verified Site Landmark</span>
+                  <span>AKN AI Vision Verified Landmark</span>
                 </div>
               </div>
 
@@ -270,12 +347,31 @@ export default function PortfolioGallery() {
                 <div className="sm:col-span-2 space-y-4">
                   <div>
                     <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
-                      Project Description & Details
+                      Project Description &amp; Specifications
                     </h4>
                     <p className="mt-1 text-sm leading-relaxed text-foreground/85">
                       {selectedProject.description}
                     </p>
                   </div>
+
+                  {selectedProject.technologies && selectedProject.technologies.length > 0 && (
+                    <div>
+                      <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
+                        Verified Technical &amp; Material Specifications
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {selectedProject.technologies.map((t, idx) => (
+                          <span
+                            key={idx}
+                            className="inline-flex items-center gap-1.5 rounded-lg bg-teal/10 px-3 py-1 text-xs font-bold text-teal border border-teal/30"
+                          >
+                            <Cpu className="size-3" />
+                            <span>{t}</span>
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
 
                   {selectedProject.scope && (
                     <div className="rounded-xl bg-muted/50 p-3 border border-border/60 text-xs">
@@ -287,7 +383,7 @@ export default function PortfolioGallery() {
                   {selectedProject.highlights && (
                     <div>
                       <h4 className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
-                        Key Structural & Engineering Highlights
+                        Key Structural &amp; Engineering Highlights
                       </h4>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {selectedProject.highlights.map((h, i) => (
