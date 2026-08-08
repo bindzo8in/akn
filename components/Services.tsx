@@ -11,7 +11,7 @@ const services = [
     title: "Residential & Layout Projects",
     headline: "Custom Villas, Duplexes & Gated Layouts",
     desc: "Turnkey residential contracting for individual homes, luxury villas, and apartments. Complete earthwork, foundation engineering, RCC framing, brick masonry, and DTCP layout planning.",
-    image: "/images/projects/turnkey-masterpiece-after.png",
+    image: "/images/completed_projects/completed-project-08.jpeg",
     tags: ["Individual Homes", "Duplex Villas", "Layout Planning"],
   },
   {
@@ -20,7 +20,7 @@ const services = [
     title: "Commercial Projects",
     headline: "Retail Complexes, Offices & Arcades",
     desc: "Multi-storey commercial buildings engineered for high footfall and durability. Featuring contemporary structural glazing, ACP facade cladding, and optimized internal commercial spaces.",
-    image: "/images/interiors/interior-project-07.jpeg",
+    image: "/images/contact/contact-hero-bg.jpg",
     tags: ["Shopping Arcades", "Corporate Offices", "Showrooms"],
   },
   {
@@ -29,7 +29,7 @@ const services = [
     title: "Hospital Infrastructure",
     headline: "Healthcare Centers & Diagnostic Labs",
     desc: "Specialized hospital and clinic construction complying with healthcare workflow standards, medical gas pipeline provisions, hygienic finishes, and heavy diagnostic equipment load requirements.",
-    image: "/images/projects/hospital-building.jpg",
+    image: "/images/hero/hero-architectural-3d.jpg",
     tags: ["Hospitals", "Clinics", "Diagnostic Labs"],
   },
   {
@@ -38,7 +38,7 @@ const services = [
     title: "Industrial Projects",
     headline: "PEB Steel Buildings & Heavy Warehouses",
     desc: "Pre-Engineered Building (PEB) steel structures, industrial factories, and logistic warehouses built with heavy load-bearing concrete flooring and long-span roofing systems.",
-    image: "/images/projects/industrial-warehouse.jpg",
+    image: "/images/hero/hero-interior-living.jpg",
     tags: ["PEB Sheds", "Warehouses", "Factories"],
   },
   {
@@ -47,7 +47,7 @@ const services = [
     title: "Renovation Works",
     headline: "Structural Retrofitting & Modern Facelifts",
     desc: "Transforming existing properties through structural strengthening, additional floor additions, contemporary elevation modernization, and advanced leak-proof waterproofing.",
-    image: "/images/ongoing_projects/ongoing-site-29.jpeg",
+    image: "/images/services/commercial-construction.jpg",
     tags: ["Elevation Remodeling", "Floor Additions", "Waterproofing"],
   },
   {
@@ -56,7 +56,7 @@ const services = [
     title: "2D & 3D Vastu Planning",
     headline: "Floor Plans, 3D Elevation & Sanctions",
     desc: "Scientific Vastu-compliant 2D architectural blueprints, photorealistic 3D exterior elevations, walkthroughs, and municipal approval sanction drawings.",
-    image: "/images/projects/architectural-3d-elevation.jpg",
+    image: "/images/interiors/interior-project-01.jpeg",
     tags: ["Vastu Floor Plans", "3D Elevations", "Sanction Drawings"],
   },
   {

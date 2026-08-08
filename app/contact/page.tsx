@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "building contractor phone number Krishnagiri",
     "free house estimate Tamil Nadu",
     "Dharmapuri construction company address",
-    "Er. Kumar civil engineer contact",
+    "Er. Kumar Arjun civil engineer contact",
   ],
   openGraph: {
     title: `Contact & Office Directory | ${env.NEXT_PUBLIC_BUSINESS_NAME}`,

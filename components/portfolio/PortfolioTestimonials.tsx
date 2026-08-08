@@ -10,7 +10,7 @@ const testimonials = [
     role: "Chief Surgeon",
     location: "Dharmapuri Town",
     project: "Sri Lakshmi Grand Duplex Villa (3,850 sq.ft)",
-    quote: "Building a home while running a hospital seemed impossible, but Er. Kumar and the AKN team took care of every single detail. The itemized billing had zero surprise escalations, and the concrete testing reports gave us 100% peace of mind.",
+    quote: "Building a home while running a hospital seemed impossible, but Er. Kumar Arjun and the AKN team took care of every single detail. The itemized billing had zero surprise escalations, and the concrete testing reports gave us 100% peace of mind.",
     rating: 5,
   },
   {

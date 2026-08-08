@@ -43,7 +43,7 @@ const services = [
     title: "Commercial & Retail Infrastructure",
     subtitle: "Multi-Storey Arcades, Shopping Complexes & Office Buildings",
     desc: "Engineered for maximum commercial rental yield, heavy foot traffic durability, and striking street presence with modern ACP cladding, structural glazing facades, and fire safety systems.",
-    image: "/images/completed_projects/completed-project-05.jpeg",
+    image: "/images/completed_projects/completed-project-02.jpeg",
     features: [
       "High-Traffic Load-Bearing RCC Columns & Beams",
       "Contemporary ACP & Spider-Fitting Structural Glazing Facades",
@@ -61,7 +61,7 @@ const services = [
     title: "Hospital & Healthcare Infrastructure",
     subtitle: "Multi-Specialty Clinics, Diagnostic Centers & Nursing Homes",
     desc: "Specialized healthcare facilities built in strict compliance with medical infrastructure standards, featuring anti-microbial surfaces, medical gas pipeline systems (MGPS), and vibration-free imaging wings.",
-    image: "/images/completed_projects/completed-project-06.jpeg",
+    image: "/images/completed_projects/completed-project-03.jpeg",
     features: [
       "Anti-Bacterial Vinyl & Seamless Epoxy Flooring",
       "Centralized Medical Gas Pipeline System (MGPS) Ducts",
@@ -79,7 +79,7 @@ const services = [
     title: "Industrial PEB Warehouses & Factories",
     subtitle: "Pre-Engineered Steel Structures, Logistics Hubs & Manufacturing Units",
     desc: "Fast-track industrial engineering utilizing heavy-duty Pre-Engineered Steel (PEB) frameworks with large column-free spans, heavy machine-load concrete flooring (FM2/FM3), and industrial ventilation.",
-    image: "/images/completed_projects/completed-project-07.jpeg",
+    image: "/images/completed_projects/completed-project-04.jpeg",
     features: [
       "Clear-Span PEB Steel Trusses up to 40+ Meters without Center Pillars",
       "High-Load Laser-Screeded Concrete Flooring (5-Ton/sq.m)",
@@ -97,7 +97,7 @@ const services = [
     title: "2D Vastu Planning & 3D Elevation Design",
     subtitle: "Scientific Floor Plans, 360° Photorealistic Walkthroughs & Approvals",
     desc: "Visualize your project before laying a single brick. We produce scientific 2D floor plans harmonized with Vastu Shastra principles, photorealistic 3D architectural elevations, and municipal sanction drawings.",
-    image: "/images/completed_projects/completed-project-04.jpeg",
+    image: "/images/completed_projects/completed-project-05.jpeg",
     features: [
       "Scientific 2D Floor Layouts (100% Vastu Shastra Compliant)",
       "Photorealistic Day & Night 3D Architectural Exterior Elevations",
@@ -115,7 +115,7 @@ const services = [
     title: "Luxury Modular Interiors & Turnkey Fitouts",
     subtitle: "Modular Kitchens, Living Room Media Walls, Wardrobe Suites & Lighting Architecture",
     desc: "Complete single-point interior design and factory-finished joinery. We craft 100% moisture-resistant BWP marine ply modular kitchens, custom bedroom walk-in wardrobes, Gyproc false ceilings with indirect LED cove lighting, TV feature walls, and commercial office fitouts.",
-    image: "/images/completed_projects/completed-project-03.jpeg",
+    image: "/images/completed_projects/completed-project-07.jpeg",
     features: [
       "Factory-Engineered Anti-Fingerprint Acrylic & High-Gloss PU Modular Kitchens with German Soft-Close Tandem Drawers",
       "Floor-to-Ceiling Sliding & Hinged Wardrobes with Internal LED Sensors & Full-Length Mirror Shutters",

@@ -10,8 +10,8 @@ const milestones = [
     title: "Inception of AKN Construction & Interiors",
     badge: "Foundation Year",
     icon: Flag,
-    desc: "Er. Kumar, B.E. establishes AKN Construction & Interiors in Krishnagiri, pioneering scientific civil engineering oversight, structural integrity, soil SBC analysis, and transparent turnkey execution.",
-    image: "/images/about/timeline-2008-inception.png",
+    desc: "Er. Kumar Arjun, B.E. establishes AKN Construction & Interiors in Krishnagiri, pioneering scientific civil engineering oversight, structural integrity, soil SBC analysis, and transparent turnkey execution.",
+    image: "/images/services/commercial-construction.jpg",
   },
   {
     year: "2018",
@@ -19,7 +19,7 @@ const milestones = [
     badge: "Commercial Expansion",
     icon: Building,
     desc: "Expanded into high-traffic retail complexes and multi-storey commercial buildings with modern ACP cladding and structural glazing facades.",
-    image: "/images/about/timeline-2018-commercial.png",
+    image: "/images/services/industrial-peb.jpg",
   },
   {
     year: "2020",
@@ -27,7 +27,7 @@ const milestones = [
     badge: "Design Innovation",
     icon: Sparkles,
     desc: "Launched in-house architectural studio for 3D photorealistic elevations, solar daylight analysis, and DTCP municipal sanction approvals.",
-    image: "/images/about/timeline-2020-studio.png",
+    image: "/images/services/interior-design.jpg",
   },
   {
     year: "2022",
@@ -35,7 +35,7 @@ const milestones = [
     badge: "Specialized Infrastructure",
     icon: HeartPulse,
     desc: "Delivered multi-specialty hospital infrastructure with oxygen pipeline compliance, alongside heavy-duty pre-engineered steel (PEB) industrial buildings in Krishnagiri.",
-    image: "/images/about/timeline-2022-healthcare.png",
+    image: "/images/services/residential-construction.jpg",
   },
   {
     year: "2024–2026",
@@ -43,7 +43,7 @@ const milestones = [
     badge: "Market Leadership",
     icon: Award,
     desc: "Crossed 200+ completed landmarks across Dharmapuri and Krishnagiri with integrated modular interior joinery, smart home automation, and 100% on-time delivery.",
-    image: "/images/about/timeline-2024-landmarks.png",
+    image: "/images/services/service-3d-elevation.jpg",
   },
 ];
 

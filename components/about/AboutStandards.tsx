@@ -11,7 +11,7 @@ const standards = [
     specs: "7, 14 & 28-Day Curing Verification",
     desc: "Standardized compression testing of casting cubes to ensure exact M20/M25/M30 grade load-bearing strength before shuttering removal.",
     icon: Microscope,
-    image: "/images/ongoing_projects/ongoing-site-03.jpeg",
+    image: "/images/ongoing_projects/ongoing-site-27.jpeg",
   },
   {
     title: "IS 13920 Earthquake Rebar",
@@ -19,7 +19,7 @@ const standards = [
     specs: "Fe-500D & Fe-550D High Elongation",
     desc: "Certified primary steel from Tata Tiscon and JSW Steel engineered for superior tensile ductility during seismic vibrations.",
     icon: ShieldCheck,
-    image: "/images/projects/raw-foundation-before.png",
+    image: "/images/ongoing_projects/ongoing-site-28.jpeg",
   },
   {
     title: "5-Layer Polymeric Waterproofing",
@@ -27,7 +27,7 @@ const standards = [
     specs: "Dr. Fixit Membrane Systems",
     desc: "100% leak-proof treatment across bathroom sunken slabs, basement retaining walls, underground water sumps, and terrace roof slabs.",
     icon: Droplets,
-    image: "/images/ongoing_projects/ongoing-site-13.jpeg",
+    image: "/images/ongoing_projects/ongoing-site-32.jpeg",
   },
   {
     title: "Scientific Vastu Bio-Climatic Design",
@@ -35,7 +35,7 @@ const standards = [
     specs: "Solar & Geomagnetic Orientation",
     desc: "Precision magnetic compass alignment for kitchen (Agni), master suite (Niruthi), and pooja room placement with maximum natural airflow.",
     icon: Compass,
-    image: "/images/projects/architectural-3d-elevation.jpg",
+    image: "/images/ongoing_projects/ongoing-site-33.jpeg",
   },
   {
     title: "Fire-Retardant Low Smoke Wiring",
@@ -43,7 +43,7 @@ const standards = [
     specs: "ISI-Certified FR Copper & ELCBs",
     desc: "Concealed electrical distribution using Havells / Finolex fire-retardant cabling, individual MCB distribution boards, and earth pits.",
     icon: Flame,
-    image: "/images/ongoing_projects/ongoing-site-29.jpeg",
+    image: "/images/portfolio/portfolio-hero-bg.jpg",
   },
   {
     title: "50-Point Pre-Handover Civil Audit",
@@ -51,7 +51,7 @@ const standards = [
     specs: "Lead Engineer Final Inspection",
     desc: "Comprehensive engineering inspection covering tile leveling, joinery alignment, water pressure checks, and flawless exterior paint finishes.",
     icon: CheckCircle2,
-    image: "/images/interiors/interior-project-03.jpeg",
+    image: "/images/projects/akn-project-14.jpg",
   },
 ];
 

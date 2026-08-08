@@ -93,7 +93,7 @@ export default function AboutHero() {
       {/* Background Architectural Texture & Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/projects/turnkey-masterpiece-after.png"
+          src="/images/ongoing_projects/ongoing-site-26.jpeg"
           alt="AKN Civil Engineering Landmarks"
           fill
           priority
@@ -181,7 +181,7 @@ export default function AboutHero() {
               <div className="relative h-80 sm:h-96 w-full overflow-hidden rounded-2xl bg-muted">
                 <Image
                   src="/images/about/er-kumar-owner.jpg"
-                  alt="Er. Kumar Managing Director & Chief Civil Engineer"
+                  alt="Er. Kumar Arjun Managing Director & Chief Civil Engineer"
                   fill
                   priority
                   className="object-cover object-top transition-transform duration-700 hover:scale-105"

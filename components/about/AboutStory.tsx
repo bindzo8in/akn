@@ -34,28 +34,28 @@ const stages = [
     title: "Geotechnical & Soil Testing",
     specs: "Safe Bearing Capacity (SBC) Calculation",
     desc: "Scientific soil penetration testing to design the exact column footing depth and prevent settlement cracks.",
-    image: "/images/ongoing_projects/ongoing-site-03.jpeg",
+    image: "/images/projects/akn-project-20.jpg",
   },
   {
     num: "02",
     title: "RCC Structural Framing",
     specs: "IS 456 & IS 1893 Seismic Standards",
     desc: "Heavy-duty steel reinforcement cages, machine-mixed vibrated concrete, and continuous 21-day water curing.",
-    image: "/images/ongoing_projects/ongoing-site-32.jpeg",
+    image: "/images/projects/raw-foundation-before.png",
   },
   {
     num: "03",
     title: "Multi-Barrier Waterproofing",
     specs: "Dr. Fixit Polymeric Membranes",
     desc: "100% leak-proof sunken slabs, underground sumps, exterior weatherproofing, and terrace thermal tile insulation.",
-    image: "/images/ongoing_projects/ongoing-site-13.jpeg",
+    image: "/images/projects/raw-foundation-before.webp",
   },
   {
     num: "04",
     title: "Turnkey Finishing & Handover",
     specs: "50-Point Pre-Handover Civil Audit",
     desc: "Precision tile leveling, designer modular interior joinery, fire-safe electricals, and final key handover.",
-    image: "/images/interiors/interior-project-03.jpeg",
+    image: "/images/projects/real-project-site-01.jpg",
   },
 ];
 
@@ -108,7 +108,7 @@ export default function AboutStory() {
 
             <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                In 2016, <strong className="text-foreground">{env.NEXT_PUBLIC_ENGINEER_NAME}, {env.NEXT_PUBLIC_ENGINEER_DEGREE}</strong> founded <strong>{env.NEXT_PUBLIC_BUSINESS_NAME}</strong> with a clear objective: to replace unorganized contractor guesswork with institutional-grade civil engineering, transparent unit-rate estimates, and guaranteed structural longevity.
+                In 2008, <strong className="text-foreground">{env.NEXT_PUBLIC_ENGINEER_NAME}, {env.NEXT_PUBLIC_ENGINEER_DEGREE}</strong> founded <strong>{env.NEXT_PUBLIC_BUSINESS_NAME}</strong> with a clear objective: to replace unorganized contractor guesswork with institutional-grade civil engineering, transparent unit-rate estimates, and guaranteed structural longevity.
               </p>
               <p>
                 For decades, homeowners in Dharmapuri and Krishnagiri faced recurring construction nightmares: unexplained budget inflation, unverified cement and rebar, delayed handovers, and costly structural flaws like wall dampness and foundation cracks.

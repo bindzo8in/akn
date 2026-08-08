@@ -10,28 +10,28 @@ const pillars = [
     specs: "IS 456 & IS 1893 Adherence",
     desc: "Rigid design protocols ensuring residential and commercial buildings withstand seismic tremors, soil expansion, and generational environmental exposure.",
     metric: "100-Year Structural Lifespan",
-    image: "/images/projects/raw-foundation-before.png",
+    image: "/images/services/service-commercial-arcade.jpg",
   },
   {
     title: "2. Absolute Cost Clarity",
     specs: "Zero Hidden Escalations",
     desc: "Every raw material brand, quantity, and labor rate is documented in an itemized BOQ before ground-breaking. No mid-project price spikes.",
     metric: "100% Guaranteed Pricing",
-    image: "/images/projects/architectural-3d-elevation.jpg",
+    image: "/images/services/service-healthcare-hospital.jpg",
   },
   {
     title: "3. Milestone Precision",
     specs: "CPM Critical Path Scheduling",
     desc: "Weekly progress milestones tracked via project management software. Concrete casting, masonry, plastering, and interiors delivered on strict calendar deadlines.",
     metric: "On-Time Handover Guarantee",
-    image: "/images/ongoing_projects/ongoing-site-29.jpeg",
+    image: "/images/services/service-industrial-peb.jpg",
   },
   {
     title: "4. Turnkey Single-Point Responsibility",
     specs: "Concept to Key Handover",
     desc: "From DTCP municipal approvals and structural blueprints to bespoke modular woodwork and exterior landscaping — one team handles everything.",
     metric: "Single Accountable Partner",
-    image: "/images/projects/turnkey-masterpiece-after.png",
+    image: "/images/services/service-luxury-interiors.jpg",
   },
 ];
 

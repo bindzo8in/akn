@@ -19,14 +19,14 @@ const slides = [
     sub: "Realistic 3D exterior elevations, Vastu-compliant 2D floor plans, and modern interior concepts tailored to your budget.",
     cta1: { label: "View Portfolio", href: "#portfolio" },
     cta2: { label: "Contact Lead Engineer", href: "#contact" },
-    image: "/images/projects/architectural-3d-elevation.jpg",
+    image: "/images/hero/hero-architectural-3d.jpg",
   },
   {
     headline: "RESIDENTIAL, COMMERCIAL & INDUSTRIAL SPECIALISTS",
     sub: "Complete project execution under qualified civil engineering direction, utilizing high-grade materials and ensuring on-time handover.",
     cta1: { label: "Schedule Site Visit", href: "#contact" },
     cta2: { label: "Call Now", href: "tel:+919943540336" },
-    image: "/images/interiors/interior-project-07.jpeg",
+    image: "/images/hero/hero-interior-living.jpg",
   },
 ];
 

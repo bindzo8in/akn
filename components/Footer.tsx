@@ -31,6 +31,14 @@ function InstagramIcon({ className }: { className?: string }) {
   );
 }
 
+function YouTubeIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+  );
+}
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -67,16 +75,28 @@ export default function Footer() {
             <p className="text-sm leading-relaxed text-muted-foreground max-w-md">
               Institutional-grade civil engineering, building contracting, 2D/3D Vastu architecture, and luxury modular interiors across {env.NEXT_PUBLIC_LOCATION_PRIMARY} and {env.NEXT_PUBLIC_LOCATION_SECONDARY}.
             </p>
-            <a
-              href={env.NEXT_PUBLIC_INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-teal"
-              aria-label={`Instagram ${env.NEXT_PUBLIC_INSTAGRAM_HANDLE}`}
-            >
-              <InstagramIcon className="size-4 text-teal" />
-              <span>{env.NEXT_PUBLIC_INSTAGRAM_HANDLE}</span>
-            </a>
+            <div className="flex flex-wrap items-center gap-4 pt-1">
+              <a
+                href={env.NEXT_PUBLIC_INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-teal"
+                aria-label={`Instagram ${env.NEXT_PUBLIC_INSTAGRAM_HANDLE}`}
+              >
+                <InstagramIcon className="size-4 text-teal" />
+                <span>{env.NEXT_PUBLIC_INSTAGRAM_HANDLE}</span>
+              </a>
+              <a
+                href={env.NEXT_PUBLIC_YOUTUBE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-red-500"
+                aria-label={`YouTube ${env.NEXT_PUBLIC_YOUTUBE_HANDLE}`}
+              >
+                <YouTubeIcon className="size-4 text-red-500" />
+                <span>YouTube Channel</span>
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}

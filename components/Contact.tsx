@@ -183,28 +183,50 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Instagram Link Badge */}
-            <a
-              href={env.NEXT_PUBLIC_INSTAGRAM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between rounded-2xl border border-border bg-card p-4 transition-all hover:border-teal/40 hover:shadow-md"
-            >
-              <div className="flex items-center gap-3">
-                <div className="flex size-10 items-center justify-center rounded-lg bg-pink-500/10 text-pink-600">
-                  <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <rect x="2" y="2" width="20" height="20" rx="5" />
-                    <circle cx="12" cy="12" r="5" />
-                    <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
-                  </svg>
+            {/* Social Media Link Badges */}
+            <div className="grid gap-3 sm:grid-cols-2">
+              <a
+                href={env.NEXT_PUBLIC_INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-2xl border border-border bg-card p-4 transition-all hover:border-teal/40 hover:shadow-md"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="flex size-10 items-center justify-center rounded-lg bg-pink-500/10 text-pink-600 shrink-0">
+                    <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <rect x="2" y="2" width="20" height="20" rx="5" />
+                      <circle cx="12" cy="12" r="5" />
+                      <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="text-[11px] text-muted-foreground">Instagram Feed</div>
+                    <div className="text-xs font-bold text-foreground truncate max-w-[120px]">{env.NEXT_PUBLIC_INSTAGRAM_HANDLE}</div>
+                  </div>
                 </div>
-                <div>
-                  <div className="text-xs text-muted-foreground">Follow Our Live Site Progress</div>
-                  <div className="text-xs font-bold text-foreground sm:text-sm">{env.NEXT_PUBLIC_INSTAGRAM_HANDLE}</div>
+                <span className="text-xs font-semibold text-teal">Follow →</span>
+              </a>
+
+              <a
+                href={env.NEXT_PUBLIC_YOUTUBE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between rounded-2xl border border-border bg-card p-4 transition-all hover:border-red-500/40 hover:shadow-md"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="flex size-10 items-center justify-center rounded-lg bg-red-500/10 text-red-600 shrink-0">
+                    <svg className="size-5" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div className="text-[11px] text-muted-foreground">YouTube Channel</div>
+                    <div className="text-xs font-bold text-foreground truncate max-w-[120px]">{env.NEXT_PUBLIC_YOUTUBE_HANDLE}</div>
+                  </div>
                 </div>
-              </div>
-              <span className="text-xs font-semibold text-teal">Follow →</span>
-            </a>
+                <span className="text-xs font-semibold text-red-500">Watch →</span>
+              </a>
+            </div>
           </div>
 
           {/* Right Column — Project Estimation Request Form */}

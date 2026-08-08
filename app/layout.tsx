@@ -99,7 +99,7 @@ function LocalBusinessJsonLd() {
       postalCode: "635001",
       addressCountry: "IN",
     },
-    sameAs: [env.NEXT_PUBLIC_INSTAGRAM_URL],
+    sameAs: [env.NEXT_PUBLIC_INSTAGRAM_URL, env.NEXT_PUBLIC_YOUTUBE_URL],
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",

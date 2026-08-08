@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: `Learn about AKN Construction & Interiors, founded in 2008 by ${env.NEXT_PUBLIC_ENGINEER_NAME}, ${env.NEXT_PUBLIC_ENGINEER_DEGREE}. 18+ years of engineering excellence, Vastu architecture, and turnkey construction & modular interiors across ${env.NEXT_PUBLIC_LOCATION_PRIMARY} & ${env.NEXT_PUBLIC_LOCATION_SECONDARY}.`,
   keywords: [
     "About AKN Construction",
-    "Er. Kumar Civil Engineer Dharmapuri",
+    "Er. Kumar Arjun Civil Engineer Dharmapuri",
     "Turnkey Civil Contractors Krishnagiri",
     "Vastu Building Planners Tamil Nadu",
     "AKN Construction History",

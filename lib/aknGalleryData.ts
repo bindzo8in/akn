@@ -26,6 +26,52 @@ export interface OnsiteVideo {
 export const aknGalleryProjects: GalleryProject[] = [
   // ── ONGOING SITES ──────────────────────────────────────────
   {
+    id: "akn-real-01",
+    title: "Premium Luxury Villa Turnkey Civil Execution",
+    category: "Ongoing Sites",
+    location: "Krishnagiri Town",
+    area: "4,200 Sq.Ft",
+    year: "2026 Active",
+    image: "/images/projects/real-project-site-01.jpg",
+    gallery: [
+      "/images/about/about-hero-bg.jpg",
+      "/images/projects/real-project-site-02.jpg",
+    ],
+    tag: "4,200 Sq.Ft • Live Turnkey Execution",
+    description:
+      "Active high-grade residential villa construction spearheaded by Er. Kumar Arjun, B.E., featuring M25 grade RCC framing, Fe-550D TMT reinforcement, and Vastu-compliant architectural planning.",
+    highlights: [
+      "Direct site leadership by Er. Kumar Arjun, B.E. (Civil)",
+      "IS 456 Seismic-Resistant RCC structural framing",
+      "Ultratech Super Cement & Fe-550D TMT steel binding",
+      "Itemized transparent BOQ with stage-wise verification",
+    ],
+    scope: "Soil SBC Testing, 2D/3D Vastu Plan, RCC Superstructure & Modular Interior Fitouts",
+  },
+  {
+    id: "akn-real-02",
+    title: "Commercial & Residential Turnkey Development",
+    category: "Ongoing Sites",
+    location: "Dharmapuri Main Belt",
+    area: "6,800 Sq.Ft",
+    year: "2026 Active",
+    image: "/images/about/standards-rcc-framing.jpg",
+    gallery: [
+      "/images/about/standards-soil-testing.jpg",
+      "/images/about/timeline-2008-inception.png",
+    ],
+    tag: "6,800 Sq.Ft • Active Site Audit",
+    description:
+      "Ongoing multi-storey civil project showcasing precision brickwork masonry, beam-column junction reinforcement, and stage-by-stage quality audits.",
+    highlights: [
+      "Daily engineer site audits & slump cone concrete tests",
+      "Precision red brick masonry with 1:6 cement-sand mortar",
+      "Integrated electrical conduit & MEP pre-installation",
+      "Zero escalation guaranteed pricing schedule",
+    ],
+    scope: "Turnkey Civil Engineering, Masonry Execution & Structural Finishing",
+  },
+  {
     id: "akn-ong-01",
     title: "Live Active Villa Site Construction",
     category: "Ongoing Sites",
@@ -34,14 +80,14 @@ export const aknGalleryProjects: GalleryProject[] = [
     year: "2026 Active",
     image: "/images/ongoing_projects/ongoing-site-01.jpeg",
     gallery: [
-      "/images/ongoing_projects/ongoing-site-01.jpeg",
       "/images/ongoing_projects/ongoing-site-02.jpeg",
       "/images/ongoing_projects/ongoing-site-03.jpeg",
       "/images/ongoing_projects/ongoing-site-04.jpeg",
+      "/images/ongoing_projects/ongoing-site-05.jpeg",
     ],
     tag: "3,400 Sq.Ft • Live Civil Execution",
     description:
-      "Active ongoing residential villa site undergoing structural framing, column reinforcement casting, and precision masonry under direct supervision of Er. Kumar.",
+      "Active ongoing residential villa site undergoing structural framing, column reinforcement casting, and precision masonry under direct supervision of Er. Kumar Arjun.",
     highlights: [
       "Fe-550D TMT rebar structural column binding",
       "Ultratech Super Cement M25 concrete casting",
@@ -57,12 +103,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Hosur Corridor",
     area: "11,200 Sq.Ft",
     year: "2026 Active",
-    image: "/images/ongoing_projects/ongoing-site-05.jpeg",
+    image: "/images/ongoing_projects/ongoing-site-06.jpeg",
     gallery: [
-      "/images/ongoing_projects/ongoing-site-05.jpeg",
-      "/images/ongoing_projects/ongoing-site-06.jpeg",
       "/images/ongoing_projects/ongoing-site-07.jpeg",
-      "/images/ongoing_projects/ongoing-site-08.jpeg",
+      "/images/ongoing_projects/ongoing-site-11.jpeg",
+      "/images/ongoing_projects/ongoing-site-12.jpeg",
+      "/images/about/timeline-2018-commercial.png",
     ],
     tag: "11,200 Sq.Ft • Commercial Slab Phase",
     description:
@@ -82,12 +128,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Town",
     area: "2,800 Sq.Ft",
     year: "2026 Active",
-    image: "/images/ongoing_projects/ongoing-site-09.jpeg",
+    image: "/images/ongoing_projects/ongoing-site-13.jpeg",
     gallery: [
-      "/images/ongoing_projects/ongoing-site-09.jpeg",
-      "/images/ongoing_projects/ongoing-site-10.jpeg",
-      "/images/ongoing_projects/ongoing-site-11.jpeg",
-      "/images/ongoing_projects/ongoing-site-12.jpeg",
+      "/images/ongoing_projects/ongoing-site-14.jpeg",
+      "/images/about/timeline-2020-studio.png",
+      "/images/ongoing_projects/ongoing-site-16.jpeg",
+      "/images/ongoing_projects/ongoing-site-17.jpeg",
     ],
     tag: "2,800 Sq.Ft • Teak Woodwork & Framing Phase",
     description:
@@ -107,12 +153,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Pennagaram Road, Dharmapuri",
     area: "3,100 Sq.Ft",
     year: "2026 Active",
-    image: "/images/ongoing_projects/ongoing-site-13.jpeg",
+    image: "/images/ongoing_projects/ongoing-site-19.jpeg",
     gallery: [
-      "/images/ongoing_projects/ongoing-site-13.jpeg",
-      "/images/ongoing_projects/ongoing-site-14.jpeg",
-      "/images/ongoing_projects/ongoing-site-15.jpeg",
-      "/images/ongoing_projects/ongoing-site-16.jpeg",
+      "/images/ongoing_projects/ongoing-site-25.jpeg",
+      "/images/ongoing_projects/ongoing-site-26.jpeg",
+      "/images/ongoing_projects/ongoing-site-27.jpeg",
+      "/images/ongoing_projects/ongoing-site-28.jpeg",
     ],
     tag: "3,100 Sq.Ft • Terrace & Facade Phase",
     description:
@@ -131,11 +177,11 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Town",
     area: "4,200 Sq.Ft",
     year: "2026 Active",
-    image: "/images/ongoing_projects/ongoing-site-29.jpeg",
+    image: "/images/ongoing_projects/ongoing-site-32.jpeg",
     gallery: [
-      "/images/ongoing_projects/ongoing-site-29.jpeg",
-      "/images/ongoing_projects/ongoing-site-30.jpeg",
-      "/images/ongoing_projects/ongoing-site-31.jpeg",
+      "/images/ongoing_projects/ongoing-site-33.jpeg",
+      "/images/about/timeline-2022-healthcare.png",
+      "/images/about/timeline-2024-landmarks.png",
     ],
     tag: "4,200 Sq.Ft • Structural Framing & Interior Phase",
     description:
@@ -155,11 +201,11 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Main Belt",
     area: "9,500 Sq.Ft",
     year: "2026 Active",
-    image: "/images/ongoing_projects/ongoing-site-32.jpeg",
+    image: "/images/completed_projects/completed-project-01.jpeg",
     gallery: [
-      "/images/ongoing_projects/ongoing-site-32.jpeg",
-      "/images/ongoing_projects/ongoing-site-33.jpeg",
-      "/images/ongoing_projects/ongoing-site-34.jpeg",
+      "/images/completed_projects/completed-project-02.jpeg",
+      "/images/completed_projects/completed-project-03.jpeg",
+      "/images/completed_projects/completed-project-04.jpeg",
     ],
     tag: "9,500 Sq.Ft • Commercial Slab & Fitout Phase",
     description:
@@ -181,12 +227,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Dharmapuri Town",
     area: "3,850 Sq.Ft",
     year: "2024",
-    image: "/images/completed_projects/completed-project-01.jpeg",
+    image: "/images/completed_projects/completed-project-05.jpeg",
     gallery: [
-      "/images/completed_projects/completed-project-01.jpeg",
-      "/images/completed_projects/completed-project-02.jpeg",
-      "/images/completed_projects/completed-project-03.jpeg",
-      "/images/completed_projects/completed-project-04.jpeg",
+      "/images/completed_projects/completed-project-07.jpeg",
+      "/images/completed_projects/completed-project-08.jpeg",
+      "/images/contact/contact-hero-bg.jpg",
+      "/images/hero/hero-architectural-3d.jpg",
     ],
     tag: "3,850 Sq.Ft • Turnkey Duplex",
     description:
@@ -206,12 +252,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Kaveripattinam, Krishnagiri",
     area: "2,450 Sq.Ft",
     year: "2024",
-    image: "/images/completed_projects/completed-project-08.jpeg",
+    image: "/images/hero/hero-interior-living.jpg",
     gallery: [
-      "/images/completed_projects/completed-project-08.jpeg",
-      "/images/completed_projects/completed-project-07.jpeg",
       "/images/completed_projects/completed-project-06.jpeg",
-      "/images/completed_projects/completed-project-05.jpeg",
+      "/images/interiors/interior-project-01.jpeg",
+      "/images/services/residential-construction.jpg",
+      "/images/interiors/interior-project-03.jpeg",
     ],
     tag: "2,450 Sq.Ft • Turnkey Duplex",
     description:
@@ -231,12 +277,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Harur Road, Dharmapuri",
     area: "2,600 Sq.Ft",
     year: "2024",
-    image: "/images/completed_projects/completed-project-02.jpeg",
+    image: "/images/interiors/interior-project-05.jpeg",
     gallery: [
-      "/images/completed_projects/completed-project-02.jpeg",
-      "/images/completed_projects/completed-project-03.jpeg",
-      "/images/completed_projects/completed-project-04.jpeg",
-      "/images/completed_projects/completed-project-01.jpeg",
+      "/images/interiors/interior-project-08.jpeg",
+      "/images/portfolio/portfolio-hero-bg.jpg",
+      "/images/projects/akn-project-14.jpg",
+      "/images/projects/akn-project-20.jpg",
     ],
     tag: "2,600 Sq.Ft • Premium Residence",
     description:
@@ -258,12 +304,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Junction",
     area: "14,500 Sq.Ft",
     year: "2024",
-    image: "/images/completed_projects/completed-project-05.jpeg",
+    image: "/images/projects/raw-foundation-before.png",
     gallery: [
-      "/images/completed_projects/completed-project-05.jpeg",
-      "/images/completed_projects/completed-project-06.jpeg",
-      "/images/completed_projects/completed-project-07.jpeg",
-      "/images/completed_projects/completed-project-08.jpeg",
+      "/images/projects/raw-foundation-before.webp",
+      "/images/services/architectural-planning.jpg",
+      "/images/projects/turnkey-masterpiece-after.png",
+      "/images/services/commercial-construction.jpg",
     ],
     tag: "14,500 Sq.Ft • G+3 Commercial Hub",
     description:
@@ -283,12 +329,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Main Bazaar, Krishnagiri",
     area: "8,500 Sq.Ft",
     year: "2023",
-    image: "/images/interiors/interior-project-07.jpeg",
+    image: "/images/services/industrial-peb.jpg",
     gallery: [
-      "/images/completed_projects/completed-project-05.jpeg",
-      "/images/completed_projects/completed-project-06.jpeg",
-      "/images/completed_projects/completed-project-07.jpeg",
-      "/images/completed_projects/completed-project-08.jpeg",
+      "/images/services/interior-design.jpg",
+      "/images/services/service-3d-elevation.jpg",
+      "/images/services/service-commercial-arcade.jpg",
+      "/images/services/service-healthcare-hospital.jpg",
     ],
     tag: "8,500 Sq.Ft • Retail Showroom & Office",
     description:
@@ -310,12 +356,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Dharmapuri Bypass",
     area: "22,000 Sq.Ft",
     year: "2023",
-    image: "/images/completed_projects/completed-project-06.jpeg",
+    image: "/images/services/service-industrial-peb.jpg",
     gallery: [
-      "/images/completed_projects/completed-project-06.jpeg",
-      "/images/completed_projects/completed-project-07.jpeg",
-      "/images/completed_projects/completed-project-08.jpeg",
-      "/images/completed_projects/completed-project-05.jpeg",
+      "/images/services/service-luxury-interiors.jpg",
+      "/images/services/services-hero-bg.jpg",
+      "/images/about/about-hero-bg.jpg",
+      "/images/about/standards-rcc-framing.jpg",
     ],
     tag: "22,000 Sq.Ft • 50-Bed Hospital",
     description:
@@ -337,12 +383,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri SIPCOT Corridor",
     area: "32,000 Sq.Ft",
     year: "2023",
-    image: "/images/completed_projects/completed-project-07.jpeg",
+    image: "/images/about/standards-soil-testing.jpg",
     gallery: [
-      "/images/completed_projects/completed-project-07.jpeg",
-      "/images/completed_projects/completed-project-08.jpeg",
-      "/images/completed_projects/completed-project-05.jpeg",
-      "/images/completed_projects/completed-project-06.jpeg",
+      "/images/about/timeline-2008-inception.png",
+      "/images/about/timeline-2018-commercial.png",
+      "/images/about/timeline-2020-studio.png",
+      "/images/about/timeline-2022-healthcare.png",
     ],
     tag: "32,000 Sq.Ft • PEB Steel Shed",
     description:
@@ -364,11 +410,11 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Town",
     area: "2,200 Sq.Ft Residence",
     year: "2025 Completed",
-    image: "/images/interiors/interior-project-03.jpeg",
+    image: "/images/about/timeline-2024-landmarks.png",
     gallery: [
-      "/images/interiors/interior-project-03.jpeg",
-      "/images/interiors/interior-project-05.jpeg",
-      "/images/interiors/interior-project-06.jpeg",
+      "/images/completed_projects/completed-project-01.jpeg",
+      "/images/completed_projects/completed-project-02.jpeg",
+      "/images/completed_projects/completed-project-03.jpeg",
     ],
     tag: "Modular Kitchen • High-Gloss Acrylic",
     description:
@@ -388,12 +434,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri",
     area: "1,850 Sq.Ft Residence",
     year: "2025 Completed",
-    image: "/images/interiors/interior-project-04.jpeg",
+    image: "/images/completed_projects/completed-project-04.jpeg",
     gallery: [
-      "/images/interiors/interior-project-04.jpeg",
-      "/images/interiors/interior-project-01.jpeg",
-      "/images/interiors/interior-project-08.jpeg",
-      "/images/interiors/interior-project-09.jpeg",
+      "/images/completed_projects/completed-project-05.jpeg",
+      "/images/completed_projects/completed-project-07.jpeg",
+      "/images/completed_projects/completed-project-08.jpeg",
+      "/images/contact/contact-hero-bg.jpg",
     ],
     tag: "Master Suite • Murphy Bed & Wardrobes",
     description:
@@ -413,9 +459,9 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Town",
     area: "850 Sq.Ft Residence",
     year: "2025 Completed",
-    image: "/images/interiors/interior-project-02.jpeg",
+    image: "/images/hero/hero-architectural-3d.jpg",
     gallery: [
-      "/images/interiors/interior-project-02.jpeg",
+      "/images/hero/hero-interior-living.jpg",
     ],
     tag: "Luxury Bath • Marble Cladding",
     description:
@@ -435,9 +481,9 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Main Bazaar",
     area: "4,500 Sq.Ft Commercial",
     year: "2025 Completed",
-    image: "/images/interiors/interior-project-07.jpeg",
+    image: "/images/interiors/interior-project-02.jpeg",
     gallery: [
-      "/images/interiors/interior-project-07.jpeg",
+      "/images/interiors/interior-project-01.jpeg",
     ],
     tag: "Commercial Interior • Showroom Lobby",
     description:
@@ -459,12 +505,12 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Palacode, Dharmapuri",
     area: "2,900 Sq.Ft",
     year: "2024",
-    image: "/images/projects/architectural-3d-elevation.jpg",
+    image: "/images/interiors/interior-project-03.jpeg",
     gallery: [
-      "/images/completed_projects/completed-project-04.jpeg",
-      "/images/completed_projects/completed-project-01.jpeg",
-      "/images/completed_projects/completed-project-02.jpeg",
-      "/images/completed_projects/completed-project-03.jpeg",
+      "/images/interiors/interior-project-05.jpeg",
+      "/images/interiors/interior-project-08.jpeg",
+      "/images/ongoing_projects/ongoing-site-01.jpeg",
+      "/images/ongoing_projects/ongoing-site-02.jpeg",
     ],
     tag: "3D Photorealistic Exterior",
     description:
@@ -481,12 +527,32 @@ export const aknGalleryProjects: GalleryProject[] = [
 
 export const aknOnsiteVideos: OnsiteVideo[] = [
   {
+    id: "vid-real-01",
+    title: "Live Active Onsite Construction & Structural Supervision",
+    location: "Krishnagiri Main Site",
+    phase: "RCC Structural Framing & Masonry",
+    videoUrl: "/videos/real-onsite-progress-01.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-03.jpeg",
+    description:
+      "Authentic site footage under direct supervision of Er. Kumar Arjun showing live RCC column casting, rebar reinforcement binding, and masonry execution.",
+  },
+  {
+    id: "vid-real-02",
+    title: "Turnkey Civil Engineering & Site Handover Inspection",
+    location: "Dharmapuri District Site",
+    phase: "Superstructure & Exterior Finishing",
+    videoUrl: "/videos/real-onsite-progress-02.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-04.jpeg",
+    description:
+      "Comprehensive site walkthrough documenting structural alignment checks, wall plastering finish, and turnkey civil execution progress.",
+  },
+  {
     id: "vid-ong-01",
     title: "Live Active Concrete Pouring & Superstructure Vibration",
     location: "Dharmapuri Ongoing Site",
     phase: "Active Slab Casting",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-01.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-01.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-05.jpeg",
     description:
       "Live footage recording active machine-mixed concrete pouring and mechanical vibration during ongoing slab casting.",
   },
@@ -496,7 +562,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Krishnagiri Active Construction",
     phase: "Column Framing",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-02.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-02.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-06.jpeg",
     description:
       "Direct site recording of chief civil engineer verifying column stirrup spacing and plumb alignment.",
   },
@@ -506,7 +572,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Hosur Belt Site",
     phase: "Substructure Phase",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-03.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-03.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-07.jpeg",
     description:
       "Heavy JCB machinery excavation and plain cement concrete (PCC) foundation bedding for ongoing villa project.",
   },
@@ -516,7 +582,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Dharmapuri Site",
     phase: "Superstructure Masonry",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-04.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-04.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-11.jpeg",
     description:
       "Artisan bricklaying with 1:6 cement-sand mortar ratio inspection and door frame anchoring.",
   },
@@ -526,7 +592,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Harur Road Site",
     phase: "Slab Shuttering",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-05.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-05.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-12.jpeg",
     description:
       "Plywood shuttering staging audit with PVC electrical conduit layout before slab rebar binding.",
   },
@@ -536,7 +602,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Palacode Ongoing Project",
     phase: "Finishing Phase",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-06.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-06.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-13.jpeg",
     description:
       "Smooth wall plastering application, edge angle installation, and client progress inspection.",
   },
@@ -546,7 +612,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Dharmapuri Site",
     phase: "Quality Audit",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-07.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-07.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-14.jpeg",
     description:
       "Comprehensive structural check, concrete cube compression test record, and site walkthrough.",
   },
@@ -556,7 +622,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Krishnagiri Active Site",
     phase: "RCC Structural & Interior Framing",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-08.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-29.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-16.jpeg",
     description:
       "On-site video documenting live RCC column concrete vibration, beam alignment, and interior wall partition framing in Krishnagiri.",
   },
@@ -566,7 +632,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Krishnagiri Town Site",
     phase: "Slab Shuttering & Electrical MEP",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-09.mp4",
-    posterImage: "/images/ongoing_projects/ongoing-site-32.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-17.jpeg",
     description:
       "Engineer quality inspection of slab shuttering staging, electrical conduit routing, plumbing lines, and interior plastering preparation.",
   },
@@ -576,7 +642,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Dharmapuri Site Project",
     phase: "Civil Superstructure",
     videoUrl: "/videos/completed_projects/completed-site-video-01.mp4",
-    posterImage: "/images/completed_projects/completed-project-01.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-19.jpeg",
     description:
       "Direct recorded on-site footage of active RCC structural framing, concrete vibration, and engineer site supervision.",
   },
@@ -586,7 +652,7 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
     location: "Krishnagiri Site Location",
     phase: "Finishing & Quality Inspection",
     videoUrl: "/videos/completed_projects/completed-site-video-02.mp4",
-    posterImage: "/images/completed_projects/completed-project-02.jpeg",
+    posterImage: "/images/ongoing_projects/ongoing-site-25.jpeg",
     description:
       "Live site documentation of masonry alignment, lintel level inspection, and turnkey finishing progress.",
   },

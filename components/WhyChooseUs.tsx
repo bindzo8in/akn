@@ -9,7 +9,7 @@ const advantages = [
     icon: ShieldCheck,
     title: "Qualified Civil Engineering Leadership",
     desc: `Directly spearheaded by ${env.NEXT_PUBLIC_ENGINEER_NAME}, ${env.NEXT_PUBLIC_ENGINEER_DEGREE}. We eliminate structural risks, design errors, and contractor shortcuts with scientific engineering oversight.`,
-    badge: "Er. Kumar, B.E.",
+    badge: "Er. Kumar Arjun, B.E.",
   },
   {
     icon: BadgeDollarSign,

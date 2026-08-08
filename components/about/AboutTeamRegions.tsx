@@ -18,21 +18,21 @@ const teamRoles = [
     specs: "Traditional Vastu & BIM Modeling",
     desc: "Architects specializing in traditional Vastu Shastra orientation, photorealistic 3D elevations, and DTCP municipal sanction drawings.",
     icon: Compass,
-    image: "/images/projects/architectural-3d-elevation.jpg",
+    image: "/images/projects/real-project-site-02.jpg",
   },
   {
     title: "Modular Interior Joinery Craftsmen",
     specs: "German Hardware & CNC Finish",
     desc: "Specialized craftsmen handling German-hardware modular kitchens, designer POP false ceilings, and custom veneer wardrobes.",
     icon: Layers,
-    image: "/images/interiors/interior-project-03.jpeg",
+    image: "/images/projects/turnkey-masterpiece-after.png",
   },
   {
     title: "Commercial & Healthcare Specialists",
     specs: "PEB Steel & Hospital Protocols",
     desc: "Engineers experienced in structural glazing, medical gas piping, cleanroom HVAC, and heavy-duty PEB industrial warehouse construction.",
     icon: Users,
-    image: "/images/interiors/interior-project-07.jpeg",
+    image: "/images/services/architectural-planning.jpg",
   },
 ];
 
