@@ -49,7 +49,7 @@ export default function ContactMapDirectory() {
             Visit Our Headquarters & <span className="text-teal">Design Studio</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
-            Drop by our Dharmapuri design studio for an architectural floor plan review or connect with our regional branch operations in Krishnagiri.
+            Drop by our Krishnagiri headquarters & design studio for an architectural layout consultation, interior sample review, or site project planning.
           </p>
         </div>
 
@@ -101,15 +101,15 @@ export default function ContactMapDirectory() {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             }`}
           >
-            {/* Dharmapuri HQ */}
+            {/* Krishnagiri HQ */}
             <div className="rounded-3xl border border-teal/40 bg-card p-6 shadow-md space-y-4">
               <div className="flex items-center justify-between border-b border-border/80 pb-3">
                 <div className="flex items-center gap-2 text-teal">
                   <MapPin className="size-5" />
-                  <h3 className="font-heading text-lg font-bold text-foreground">Dharmapuri Head Office</h3>
+                  <h3 className="font-heading text-lg font-bold text-foreground">Krishnagiri Head Office</h3>
                 </div>
                 <span className="rounded-full bg-teal/10 px-2.5 py-0.5 text-[11px] font-bold text-teal">
-                  Main Studio
+                  Headquarters & Studio
                 </span>
               </div>
 
@@ -117,7 +117,7 @@ export default function ContactMapDirectory() {
                 <p className="text-foreground font-medium">
                   {env.NEXT_PUBLIC_BUSINESS_NAME}, Design & Engineering Center
                 </p>
-                <p>{env.NEXT_PUBLIC_LOCATION_PRIMARY}, {env.NEXT_PUBLIC_LOCATION_STATE} – 636701</p>
+                <p>{env.NEXT_PUBLIC_LOCATION_PRIMARY}, {env.NEXT_PUBLIC_LOCATION_STATE} – 635001</p>
                 
                 <div className="pt-2 space-y-1.5">
                   <div className="flex items-center gap-2">
@@ -136,23 +136,23 @@ export default function ContactMapDirectory() {
               </div>
             </div>
 
-            {/* Krishnagiri Branch */}
+            {/* Dharmapuri Regional Office */}
             <div className="rounded-3xl border border-border bg-card p-6 shadow-sm space-y-4">
               <div className="flex items-center justify-between border-b border-border/80 pb-3">
                 <div className="flex items-center gap-2 text-gold">
                   <Compass className="size-5" />
-                  <h3 className="font-heading text-lg font-bold text-foreground">Krishnagiri Operations</h3>
+                  <h3 className="font-heading text-lg font-bold text-foreground">Dharmapuri Regional Office</h3>
                 </div>
                 <span className="rounded-full bg-gold/10 px-2.5 py-0.5 text-[11px] font-bold text-gold">
-                  Branch Hub
+                  Regional Branch
                 </span>
               </div>
 
               <div className="space-y-2.5 text-xs sm:text-sm text-muted-foreground">
                 <p className="text-foreground font-medium">
-                  Site Engineering & Mobilization Center
+                  Regional Site Operations & Client Consulting
                 </p>
-                <p>{env.NEXT_PUBLIC_LOCATION_SECONDARY} & Hosur Industrial Belt, Tamil Nadu</p>
+                <p>{env.NEXT_PUBLIC_LOCATION_SECONDARY} & Pennagaram Region, Tamil Nadu</p>
                 
                 <div className="pt-2">
                   <div className="flex items-center gap-2">

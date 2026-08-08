@@ -149,7 +149,7 @@ export default function About() {
               <div className="absolute bottom-5 left-5 right-5 flex items-center justify-between text-white">
                 <div>
                   <div className="text-xs font-semibold uppercase tracking-wider text-gold">Serving Tamil Nadu</div>
-                  <div className="font-heading text-base font-bold sm:text-lg">Dharmapuri & Krishnagiri</div>
+                  <div className="font-heading text-base font-bold sm:text-lg">Krishnagiri & Dharmapuri</div>
                 </div>
                 <div className="rounded-xl bg-teal px-3.5 py-1.5 text-center text-xs font-bold uppercase tracking-wider">
                   Since {env.NEXT_PUBLIC_FOUNDED_YEAR}
@@ -164,7 +164,7 @@ export default function About() {
                 startCount ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"
               }`}
             >
-              <CounterItem target={8} suffix="+" label="Years Experience" startCount={startCount} />
+              <CounterItem target={18} suffix="+" label="Years Experience" startCount={startCount} />
               <CounterItem target={200} suffix="+" label="Landmarks Built" startCount={startCount} />
               <CounterItem target={100} suffix="%" label="Client Trust" startCount={startCount} />
             </div>
@@ -204,8 +204,13 @@ export default function About() {
             <div className="space-y-4">
               <div className="rounded-2xl border border-border bg-card p-5 shadow-sm">
                 <div className="flex items-center gap-3">
-                  <div className="flex size-12 shrink-0 items-center justify-center rounded-full bg-teal text-lg font-bold text-white shadow-md">
-                    EK
+                  <div className="relative size-12 shrink-0 overflow-hidden rounded-full border-2 border-teal bg-muted shadow-md">
+                    <Image
+                      src="/images/about/er-kumar-owner.jpg"
+                      alt={env.NEXT_PUBLIC_ENGINEER_NAME}
+                      fill
+                      className="object-cover object-top"
+                    />
                   </div>
                   <div>
                     <h3 className="font-heading text-base font-bold text-foreground">{env.NEXT_PUBLIC_ENGINEER_NAME}</h3>

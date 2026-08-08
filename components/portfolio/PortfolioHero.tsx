@@ -52,7 +52,7 @@ export default function PortfolioHero() {
           }`}
         >
           <Award className="size-4 text-gold" />
-          <span>200+ Landmarks Constructed • 8+ Years of Structural Excellence</span>
+          <span>200+ Landmarks Handover • 18+ Years of Civil & Interior Excellence</span>
         </div>
 
         {/* Headline */}

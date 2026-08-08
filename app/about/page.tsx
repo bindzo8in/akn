@@ -11,7 +11,7 @@ import { env } from "@/app/env";
 
 export const metadata: Metadata = {
   title: `About Us | ${env.NEXT_PUBLIC_BUSINESS_NAME} — Civil Engineering & Turnkey Contracting`,
-  description: `Learn about AKN Construction & Interiors, founded in 2016 by ${env.NEXT_PUBLIC_ENGINEER_NAME}, ${env.NEXT_PUBLIC_ENGINEER_DEGREE}. 8+ years of engineering excellence, Vastu architecture, and turnkey construction across ${env.NEXT_PUBLIC_LOCATION_PRIMARY} & ${env.NEXT_PUBLIC_LOCATION_SECONDARY}.`,
+  description: `Learn about AKN Construction & Interiors, founded in 2008 by ${env.NEXT_PUBLIC_ENGINEER_NAME}, ${env.NEXT_PUBLIC_ENGINEER_DEGREE}. 18+ years of engineering excellence, Vastu architecture, and turnkey construction & modular interiors across ${env.NEXT_PUBLIC_LOCATION_PRIMARY} & ${env.NEXT_PUBLIC_LOCATION_SECONDARY}.`,
   keywords: [
     "About AKN Construction",
     "Er. Kumar Civil Engineer Dharmapuri",

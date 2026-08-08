@@ -157,11 +157,11 @@ export default function AboutStory() {
               <div className="mt-6 flex items-center gap-4 border-t border-border/80 pt-6">
                 <div className="size-14 overflow-hidden rounded-full border-2 border-teal bg-muted">
                   <Image
-                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=200&q=80"
+                    src="/images/about/er-kumar-owner.jpg"
                     alt={env.NEXT_PUBLIC_ENGINEER_NAME}
                     width={56}
                     height={56}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover object-top"
                   />
                 </div>
                 <div>

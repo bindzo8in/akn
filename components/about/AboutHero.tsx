@@ -8,7 +8,7 @@ import { env } from "@/app/env";
 
 const stats = [
   { value: 200, suffix: "+", label: "Completed Landmarks", sub: "Residential, Commercial & PEB" },
-  { value: 8, suffix: "+", label: "Years of Engineering", sub: "Est. 2016 in Dharmapuri" },
+  { value: 18, suffix: "+", label: "Years of Engineering", sub: "Est. 2008 in Krishnagiri" },
   { value: 100, suffix: "%", label: "On-Time Handover", sub: "Milestone-Driven CPM Schedule" },
   { value: 50, suffix: "+", label: "Quality Checkpoints", sub: "IS 456 & BIS Compliant" },
 ];
@@ -148,7 +148,7 @@ export default function AboutHero() {
                 isLoaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
               }`}
             >
-              For over 8 years, <strong className="text-foreground">{env.NEXT_PUBLIC_BUSINESS_NAME}</strong> has set the gold standard in structural integrity, scientific Vastu architecture, and transparent turnkey execution across {env.NEXT_PUBLIC_LOCATION_PRIMARY} & {env.NEXT_PUBLIC_LOCATION_SECONDARY}.
+              For over 18 years, <strong className="text-foreground">{env.NEXT_PUBLIC_BUSINESS_NAME}</strong> has set the gold standard in structural integrity, scientific Vastu architecture, and transparent turnkey civil & interior execution across {env.NEXT_PUBLIC_LOCATION_PRIMARY} & {env.NEXT_PUBLIC_LOCATION_SECONDARY}.
             </p>
 
             <div
@@ -178,13 +178,13 @@ export default function AboutHero() {
             }`}
           >
             <div className="relative overflow-hidden rounded-3xl border border-border bg-card/90 p-6 backdrop-blur-xl shadow-2xl">
-              <div className="relative h-64 w-full overflow-hidden rounded-2xl bg-muted">
+              <div className="relative h-80 sm:h-96 w-full overflow-hidden rounded-2xl bg-muted">
                 <Image
-                  src="/images/about/quality-supervision.jpg"
-                  alt="Er. Kumar Chief Civil Engineer"
+                  src="/images/about/er-kumar-owner.jpg"
+                  alt="Er. Kumar Managing Director & Chief Civil Engineer"
                   fill
                   priority
-                  className="object-cover transition-transform duration-700 hover:scale-105"
+                  className="object-cover object-top transition-transform duration-700 hover:scale-105"
                   sizes="(max-width: 1024px) 100vw, 40vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
@@ -203,7 +203,7 @@ export default function AboutHero() {
               <div className="mt-5 space-y-3">
                 <div className="flex items-center justify-between text-xs text-muted-foreground border-b border-border pb-3">
                   <span>Experience:</span>
-                  <span className="font-semibold text-foreground">8+ Years in Structural Execution</span>
+                  <span className="font-semibold text-foreground">18+ Years in Civil & Interior Execution</span>
                 </div>
                 <div className="flex items-center justify-between text-xs text-muted-foreground border-b border-border pb-3">
                   <span>Specialization:</span>

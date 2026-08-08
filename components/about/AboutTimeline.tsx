@@ -6,11 +6,11 @@ import { Flag, Building, Sparkles, HeartPulse, Award } from "lucide-react";
 
 const milestones = [
   {
-    year: "2016",
-    title: "Inception of AKN Construction",
+    year: "2008",
+    title: "Inception of AKN Construction & Interiors",
     badge: "Foundation Year",
     icon: Flag,
-    desc: "Er. Kumar, B.E. establishes AKN Construction in Dharmapuri, pioneering scientific civil engineering oversight, soil SBC analysis, and transparent itemized estimates.",
+    desc: "Er. Kumar, B.E. establishes AKN Construction & Interiors in Krishnagiri, pioneering scientific civil engineering oversight, structural integrity, soil SBC analysis, and transparent turnkey execution.",
     image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80",
   },
   {

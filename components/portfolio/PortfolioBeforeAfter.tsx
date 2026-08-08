@@ -100,7 +100,7 @@ export default function PortfolioBeforeAfter() {
           {/* AFTER Image (Full Background) */}
           <div className="absolute inset-0">
             <Image
-              src="/images/projects/residential-luxury-villa.jpg"
+              src="/images/projects/turnkey-masterpiece-after.png"
               alt="Completed Turnkey Landmark"
               fill
               className="object-cover"
@@ -117,14 +117,14 @@ export default function PortfolioBeforeAfter() {
             style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
           >
             <Image
-              src="/images/about/structural-framing.jpg"
-              alt="Raw RCC Framing Phase"
+              src="/images/projects/raw-foundation-before.webp"
+              alt="Raw RCC Foundation & Columns"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 1200px"
             />
             <div className="absolute bottom-6 left-6 z-10 rounded-xl bg-black/60 backdrop-blur-md px-4 py-2 text-xs font-bold text-gold shadow-md">
-              BEFORE: Structural RCC Framework
+              BEFORE: Raw RCC Foundation & Columns
             </div>
           </div>
 

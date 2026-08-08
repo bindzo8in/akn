@@ -124,6 +124,54 @@ export const aknGalleryProjects: GalleryProject[] = [
     ],
     scope: "3D Facade Realization, Waterproofing & Finishing",
   },
+  {
+    id: "akn-ong-05",
+    title: "Krishnagiri Villa Structural & Interior Fitout Progress",
+    category: "Ongoing Sites",
+    location: "Krishnagiri Town",
+    area: "4,200 Sq.Ft",
+    year: "2026 Active",
+    image: "/images/ongoing_projects/ongoing-site-29.jpeg",
+    gallery: [
+      "/images/ongoing_projects/ongoing-site-29.jpeg",
+      "/images/ongoing_projects/ongoing-site-30.jpeg",
+      "/images/ongoing_projects/ongoing-site-31.jpeg",
+    ],
+    tag: "4,200 Sq.Ft • Structural Framing & Interior Phase",
+    description:
+      "Live active construction site in Krishnagiri undergoing column reinforcement, slab concreting, electrical conduit layout, and preliminary modular interior ceiling staging.",
+    highlights: [
+      "Ultratech M25 concrete casting with machine vibrators",
+      "Fe-550D TMT column & beam reinforcement binding",
+      "Concealed electrical & plumbing pipe alignment audit",
+      "Vastu-compliant interior wall partition alignment",
+    ],
+    scope: "Turnkey Civil Superstructure, Electrical MEP & Bespoke Interior Staging",
+  },
+  {
+    id: "akn-ong-06",
+    title: "Krishnagiri Commercial & Interior Active Site",
+    category: "Ongoing Sites",
+    location: "Krishnagiri Main Belt",
+    area: "9,500 Sq.Ft",
+    year: "2026 Active",
+    image: "/images/ongoing_projects/ongoing-site-32.jpeg",
+    gallery: [
+      "/images/ongoing_projects/ongoing-site-32.jpeg",
+      "/images/ongoing_projects/ongoing-site-33.jpeg",
+      "/images/ongoing_projects/ongoing-site-34.jpeg",
+    ],
+    tag: "9,500 Sq.Ft • Commercial Slab & Fitout Phase",
+    description:
+      "Active multi-floor commercial site progress featuring heavy shuttering staging, mezzanine structural framing, and central HVAC duct routing under engineer supervision.",
+    highlights: [
+      "Heavy load RCC beam & slab shuttering staging",
+      "High-tensile steel structural reinforcement check",
+      "Commercial showroom display wall framing",
+      "Safety netting & strict structural engineering audits",
+    ],
+    scope: "Commercial Superstructure, Mezzanine Framing & Interior Infrastructure",
+  },
 
   // ── RESIDENTIAL VILLAS ─────────────────────────────────────
   {
@@ -232,7 +280,7 @@ export const aknGalleryProjects: GalleryProject[] = [
     id: "akn-com-02",
     title: "Executive Commercial Showroom & Offices",
     category: "Commercial",
-    location: "Dharmapuri Main Bazaar",
+    location: "Krishnagiri Main Bazaar, Krishnagiri",
     area: "8,500 Sq.Ft",
     year: "2023",
     image: "/images/completed_projects/completed-project-05.jpeg",
@@ -242,9 +290,9 @@ export const aknGalleryProjects: GalleryProject[] = [
       "/images/completed_projects/completed-project-07.jpeg",
       "/images/completed_projects/completed-project-08.jpeg",
     ],
-    tag: "8,500 Sq.Ft • Retail Showroom",
+    tag: "8,500 Sq.Ft • Retail Showroom & Office",
     description:
-      "Engineered for brand visibility with double-height showroom display glass, reinforced mezzanine flooring, central air-conditioning ducting, and power backup provisions.",
+      "Engineered for brand visibility in prime Krishnagiri commercial hub with double-height showroom display glass, reinforced mezzanine flooring, central air-conditioning ducting, executive interior office fitouts, and power backup provisions.",
     highlights: [
       "12mm clear toughened glass display front",
       "Heavy load bearing structural steel mezzanine floor",
@@ -311,28 +359,96 @@ export const aknGalleryProjects: GalleryProject[] = [
   // ── INTERIORS ──────────────────────────────────────────────
   {
     id: "akn-int-01",
-    title: "Bespoke Luxury Residence Interiors",
+    title: "Sage Green High-Gloss Modular Kitchen",
     category: "Interiors",
-    location: "Dharmapuri",
-    area: "3,200 Sq.Ft",
-    year: "2024",
-    image: "/images/completed_projects/completed-project-03.jpeg",
+    location: "Krishnagiri Town",
+    area: "2,200 Sq.Ft Residence",
+    year: "2025 Completed",
+    image: "/images/interiors/interior-project-03.jpeg",
     gallery: [
-      "/images/completed_projects/completed-project-03.jpeg",
-      "/images/completed_projects/completed-project-04.jpeg",
-      "/images/completed_projects/completed-project-01.jpeg",
-      "/images/completed_projects/completed-project-02.jpeg",
+      "/images/interiors/interior-project-03.jpeg",
+      "/images/interiors/interior-project-05.jpeg",
+      "/images/interiors/interior-project-06.jpeg",
     ],
-    tag: "Turnkey Interior Fitout",
+    tag: "Modular Kitchen • High-Gloss Acrylic",
     description:
-      "Bespoke turnkey interior architecture featuring anti-fingerprint acrylic modular kitchen, magnetic track lighting, veneer wall panelling, and customized master bedroom walk-in wardrobes.",
+      "Bespoke turnkey sage-green high-gloss acrylic modular kitchen featuring handleless soft-close tandem drawers, fluted glass wall cabinets, integrated wicker basket pull-outs, built-in chimney, and seamless white quartz countertops.",
     highlights: [
-      "Hafele & Hettich German soft-close hardware throughout",
-      "Gyproc false ceilings with layered warm ambient COB spotlights",
-      "Custom PU finished TV unit with concealed wire conduits",
-      "Kalinga quartz kitchen countertop with high-grade sink",
+      "100% BWP Marine Plywood with anti-fingerprint acrylic laminate",
+      "Hettich / Hafele German soft-close hydraulic pull-out tandem system",
+      "Integrated wicker basket drawers & built-in tall pantry cabinet",
+      "Kalinga quartz countertop with seamless under-mount 304 SS sink",
     ],
-    scope: "3D Interior Design, Space Planning, Custom Joinery & Lighting Installation",
+    scope: "End-to-End 3D Interior Design, Space Planning, Custom Factory Joinery & Turnkey Installation",
+  },
+  {
+    id: "akn-int-02",
+    title: "Master Suite Wardrobe & Space-Saving Murphy Bed",
+    category: "Interiors",
+    location: "Krishnagiri",
+    area: "1,850 Sq.Ft Residence",
+    year: "2025 Completed",
+    image: "/images/interiors/interior-project-04.jpeg",
+    gallery: [
+      "/images/interiors/interior-project-04.jpeg",
+      "/images/interiors/interior-project-01.jpeg",
+      "/images/interiors/interior-project-08.jpeg",
+      "/images/interiors/interior-project-09.jpeg",
+    ],
+    tag: "Master Suite • Murphy Bed & Wardrobes",
+    description:
+      "Modern bedroom interior featuring custom hydraulic fold-down Murphy wall bed mechanism, geometric fluted sliding wardrobes, padded leatherette headboard, teak wood bed frame, and acoustic wall panelling.",
+    highlights: [
+      "Custom engineered hydraulic wall-mounted Murphy bed mechanism",
+      "Geometric louvered sliding wardrobes with internal sensor lighting",
+      "Vertical padded headboard with acoustic wall fluting & vanity mirror",
+      "Concealed LED cove ceiling lighting and custom floating side tables",
+    ],
+    scope: "Interior Space Optimization, Custom Furniture Engineering & Turnkey Joinery",
+  },
+  {
+    id: "akn-int-03",
+    title: "Luxury Bathroom Suite & Marble Wall Cladding",
+    category: "Interiors",
+    location: "Krishnagiri Town",
+    area: "850 Sq.Ft Residence",
+    year: "2025 Completed",
+    image: "/images/interiors/interior-project-02.jpeg",
+    gallery: [
+      "/images/interiors/interior-project-02.jpeg",
+    ],
+    tag: "Luxury Bath • Marble Cladding",
+    description:
+      "High-end bathroom interior featuring dark blue and gold vein marble tile wall cladding, concealed flush tank with wall-hung ceramic WC, granite shelf ledge, and premium chrome sanitaryware.",
+    highlights: [
+      "Full-height dark blue & gold vein marble vitrified tile wall cladding",
+      "Concealed dual-flush cistern with wall-hung ceramic WC",
+      "Grohe / Kohler premium single-lever diverter fittings",
+      "Granite vanity ledge & anti-skid floor tiling",
+    ],
+    scope: "Sanitaryware Layout, Concealed Plumbing, Tile Fitting & Waterproofing",
+  },
+  {
+    id: "akn-int-04",
+    title: "Executive Showroom Reception & Glass Lobby Fitout",
+    category: "Interiors",
+    location: "Krishnagiri Main Bazaar",
+    area: "4,500 Sq.Ft Commercial",
+    year: "2025 Completed",
+    image: "/images/interiors/interior-project-07.jpeg",
+    gallery: [
+      "/images/interiors/interior-project-07.jpeg",
+    ],
+    tag: "Commercial Interior • Showroom Lobby",
+    description:
+      "Commercial showroom entrance lobby interior featuring double-height structural glass wall, polished granite staircase with stainless steel handrails, elevator lobby cladding, and indoor garden seating.",
+    highlights: [
+      "12mm clear toughened glass facade wall integration",
+      "Polished dark granite staircase with 304 SS safety handrails",
+      "Elevator lobby granite wall cladding & ambient lighting",
+      "Integrated indoor planter beds & acoustic tile ceiling",
+    ],
+    scope: "Commercial Interior Architecture, Glazing, Marble Cladding & Lighting",
   },
 
   // ── 3D ELEVATIONS ──────────────────────────────────────────
@@ -427,12 +543,32 @@ export const aknOnsiteVideos: OnsiteVideo[] = [
   {
     id: "vid-ong-07",
     title: "Live Structural Load Testing & Quality Walkthrough",
-    location: "Dharmapuri Headquarters Site",
+    location: "Dharmapuri Site",
     phase: "Quality Audit",
     videoUrl: "/videos/ongoing_projects/ongoing-site-video-07.mp4",
     posterImage: "/images/ongoing_projects/ongoing-site-07.jpeg",
     description:
       "Comprehensive structural check, concrete cube compression test record, and site walkthrough.",
+  },
+  {
+    id: "vid-ong-08",
+    title: "Live Krishnagiri Site Structural & Interior Framing Walkthrough",
+    location: "Krishnagiri Active Site",
+    phase: "RCC Structural & Interior Framing",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-08.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-29.jpeg",
+    description:
+      "On-site video documenting live RCC column concrete vibration, beam alignment, and interior wall partition framing in Krishnagiri.",
+  },
+  {
+    id: "vid-ong-09",
+    title: "Ongoing Active Site Inspection & Interior Finishing Audit",
+    location: "Krishnagiri Town Site",
+    phase: "Slab Shuttering & Electrical MEP",
+    videoUrl: "/videos/ongoing_projects/ongoing-site-video-09.mp4",
+    posterImage: "/images/ongoing_projects/ongoing-site-32.jpeg",
+    description:
+      "Engineer quality inspection of slab shuttering staging, electrical conduit routing, plumbing lines, and interior plastering preparation.",
   },
   {
     id: "vid-01",

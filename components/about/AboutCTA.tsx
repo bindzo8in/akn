@@ -48,7 +48,7 @@ export default function AboutCTA() {
           }`}
         >
           <Award className="size-4 text-gold" />
-          <span>8+ Years of Structural Leadership • 200+ Landmarks Handover</span>
+          <span>18+ Years of Engineering & Interior Excellence • 200+ Landmarks Handover</span>
         </div>
 
         {/* Heading */}

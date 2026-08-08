@@ -62,11 +62,11 @@ const services = [
   {
     num: "07",
     icon: Sparkles,
-    title: "Interior Design & Fitouts",
-    headline: "Modular Kitchens & Bespoke Spaces",
-    desc: "Complete interior fitouts including German-hardware modular kitchens, designer POP/gypsum false ceilings, custom wardrobe joinery, TV units, and mood lighting.",
+    title: "Luxury Modular Interiors & Turnkey Fitouts",
+    headline: "Bespoke Modular Kitchens, Wardrobes & Living Spaces",
+    desc: "End-to-end modular interior design & execution using 100% BWP Marine Plywood, Hafele/Hettich German soft-close hardware, Gyproc false ceilings with indirect LED cove lighting, custom PU TV media walls, and acoustic wall panelling.",
     image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
-    tags: ["Modular Kitchens", "False Ceilings", "Custom Wardrobes"],
+    tags: ["Modular Kitchens", "Walk-in Wardrobes", "False Ceilings", "TV Media Walls", "Quartz Surfaces"],
   },
 ];
 
@@ -112,10 +112,10 @@ export default function Services() {
               <span className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">Our Services</span>
             </div>
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
-              Comprehensive <span className="text-teal">Construction</span> & Design Solutions
+              Civil <span className="text-teal">Construction</span> & Modular <span className="text-gold">Interior</span> Solutions
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              From architectural concept drawings to turnkey handover — engineering excellence in every square foot across Dharmapuri & Krishnagiri.
+              From foundation soil testing and 2D/3D Vastu architectural plans to heavy RCC framing, luxury modular kitchen joinery, and complete interior fitouts — single-point execution across Krishnagiri & Dharmapuri.
             </p>
           </div>
 

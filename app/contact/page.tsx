@@ -37,7 +37,7 @@ const contactPageSchema = {
       "@type": "PostalAddress",
       addressLocality: env.NEXT_PUBLIC_LOCATION_PRIMARY,
       addressRegion: "Tamil Nadu",
-      postalCode: "636701",
+      postalCode: "635001",
       addressCountry: "IN",
     },
     geo: {
