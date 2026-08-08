@@ -126,8 +126,7 @@ export default function Footer() {
                   {env.NEXT_PUBLIC_EMAIL}
                 </a>
               </li>
-              <li>{env.NEXT_PUBLIC_LOCATION_PRIMARY} & {env.NEXT_PUBLIC_LOCATION_SECONDARY}</li>
-              <li>{env.NEXT_PUBLIC_LOCATION_STATE}, India</li>
+              <li className="pt-1 text-xs leading-relaxed">{env.NEXT_PUBLIC_ADDRESS_FULL}</li>
             </ul>
           </div>
         </div>

@@ -157,9 +157,12 @@ export default function Contact() {
                 <MapPin className="size-5" strokeWidth={1.8} />
               </div>
               <div>
-                <h3 className="font-heading text-sm font-bold text-foreground">Service Locations</h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  {env.NEXT_PUBLIC_LOCATION_PRIMARY} – {env.NEXT_PUBLIC_LOCATION_SECONDARY} & surrounding districts, {env.NEXT_PUBLIC_LOCATION_STATE}
+                <h3 className="font-heading text-sm font-bold text-foreground">Headquarters Office Address</h3>
+                <p className="mt-2 text-xs sm:text-sm leading-relaxed text-foreground font-medium">
+                  {env.NEXT_PUBLIC_ADDRESS_FULL}
+                </p>
+                <p className="mt-1.5 text-xs text-muted-foreground">
+                  Serving {env.NEXT_PUBLIC_LOCATION_PRIMARY}, {env.NEXT_PUBLIC_LOCATION_SECONDARY} & surrounding districts.
                 </p>
               </div>
             </div>

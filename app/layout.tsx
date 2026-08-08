@@ -93,8 +93,10 @@ function LocalBusinessJsonLd() {
     ],
     address: {
       "@type": "PostalAddress",
+      streetAddress: env.NEXT_PUBLIC_ADDRESS_STREET,
       addressLocality: env.NEXT_PUBLIC_LOCATION_PRIMARY,
       addressRegion: "Tamil Nadu",
+      postalCode: "635001",
       addressCountry: "IN",
     },
     sameAs: [env.NEXT_PUBLIC_INSTAGRAM_URL],

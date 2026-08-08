@@ -117,7 +117,9 @@ export default function ContactMapDirectory() {
                 <p className="text-foreground font-medium">
                   {env.NEXT_PUBLIC_BUSINESS_NAME}, Design & Engineering Center
                 </p>
-                <p>{env.NEXT_PUBLIC_LOCATION_PRIMARY}, {env.NEXT_PUBLIC_LOCATION_STATE} – 635001</p>
+                <p className="leading-relaxed">
+                  {env.NEXT_PUBLIC_ADDRESS_FULL}
+                </p>
                 
                 <div className="pt-2 space-y-1.5">
                   <div className="flex items-center gap-2">
