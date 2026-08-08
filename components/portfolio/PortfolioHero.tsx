@@ -19,7 +19,7 @@ export default function PortfolioHero() {
       {/* Background Architectural Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/projects/residential-luxury-villa.jpg"
+          src="/images/projects/turnkey-masterpiece-after.png"
           alt="AKN Architectural Landmarks"
           fill
           priority

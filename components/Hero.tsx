@@ -12,21 +12,21 @@ const slides = [
     sub: "End-to-end engineering, contracting, and interior design solutions delivered with uncompromised quality and structural perfection across Dharmapuri & Krishnagiri.",
     cta1: { label: "Get Free Quote", href: "#contact" },
     cta2: { label: "Explore Our Services", href: "#services" },
-    image: "/images/hero/hero-main-bg.jpg",
+    image: "/images/projects/turnkey-masterpiece-after.png",
   },
   {
     headline: "VISUALIZE YOUR DREAM SPACE BEFORE WE BUILD",
     sub: "Realistic 3D exterior elevations, Vastu-compliant 2D floor plans, and modern interior concepts tailored to your budget.",
     cta1: { label: "View Portfolio", href: "#portfolio" },
     cta2: { label: "Contact Lead Engineer", href: "#contact" },
-    image: "/images/hero/hero-slide-1.jpg",
+    image: "/images/projects/architectural-3d-elevation.jpg",
   },
   {
     headline: "RESIDENTIAL, COMMERCIAL & INDUSTRIAL SPECIALISTS",
     sub: "Complete project execution under qualified civil engineering direction, utilizing high-grade materials and ensuring on-time handover.",
     cta1: { label: "Schedule Site Visit", href: "#contact" },
     cta2: { label: "Call Now", href: "tel:+919943540336" },
-    image: "/images/hero/hero-slide-2.jpg",
+    image: "/images/interiors/interior-project-07.jpeg",
   },
 ];
 

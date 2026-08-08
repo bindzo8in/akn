@@ -93,7 +93,7 @@ export default function AboutHero() {
       {/* Background Architectural Texture & Overlay */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/about/site-engineering.jpg"
+          src="/images/projects/turnkey-masterpiece-after.png"
           alt="AKN Civil Engineering Landmarks"
           fill
           priority

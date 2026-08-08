@@ -34,28 +34,28 @@ const stages = [
     title: "Geotechnical & Soil Testing",
     specs: "Safe Bearing Capacity (SBC) Calculation",
     desc: "Scientific soil penetration testing to design the exact column footing depth and prevent settlement cracks.",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    image: "/images/ongoing_projects/ongoing-site-03.jpeg",
   },
   {
     num: "02",
     title: "RCC Structural Framing",
     specs: "IS 456 & IS 1893 Seismic Standards",
     desc: "Heavy-duty steel reinforcement cages, machine-mixed vibrated concrete, and continuous 21-day water curing.",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    image: "/images/ongoing_projects/ongoing-site-32.jpeg",
   },
   {
     num: "03",
     title: "Multi-Barrier Waterproofing",
     specs: "Dr. Fixit Polymeric Membranes",
     desc: "100% leak-proof sunken slabs, underground sumps, exterior weatherproofing, and terrace thermal tile insulation.",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+    image: "/images/ongoing_projects/ongoing-site-13.jpeg",
   },
   {
     num: "04",
     title: "Turnkey Finishing & Handover",
     specs: "50-Point Pre-Handover Civil Audit",
     desc: "Precision tile leveling, designer modular interior joinery, fire-safe electricals, and final key handover.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    image: "/images/interiors/interior-project-03.jpeg",
   },
 ];
 

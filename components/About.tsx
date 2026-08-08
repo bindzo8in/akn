@@ -139,7 +139,7 @@ export default function About() {
             {/* Primary Construction Site Image */}
             <div className="relative h-72 overflow-hidden rounded-2xl sm:h-80 shadow-lg">
               <Image
-                src="/images/about/site-engineering.jpg"
+                src="/images/ongoing_projects/ongoing-site-03.jpeg"
                 alt="AKN Construction Site Engineering"
                 fill
                 className="object-cover transition-transform duration-700 hover:scale-105"

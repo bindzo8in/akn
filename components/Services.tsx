@@ -11,7 +11,7 @@ const services = [
     title: "Residential & Layout Projects",
     headline: "Custom Villas, Duplexes & Gated Layouts",
     desc: "Turnkey residential contracting for individual homes, luxury villas, and apartments. Complete earthwork, foundation engineering, RCC framing, brick masonry, and DTCP layout planning.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    image: "/images/projects/turnkey-masterpiece-after.png",
     tags: ["Individual Homes", "Duplex Villas", "Layout Planning"],
   },
   {
@@ -20,7 +20,7 @@ const services = [
     title: "Commercial Projects",
     headline: "Retail Complexes, Offices & Arcades",
     desc: "Multi-storey commercial buildings engineered for high footfall and durability. Featuring contemporary structural glazing, ACP facade cladding, and optimized internal commercial spaces.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    image: "/images/interiors/interior-project-07.jpeg",
     tags: ["Shopping Arcades", "Corporate Offices", "Showrooms"],
   },
   {
@@ -29,7 +29,7 @@ const services = [
     title: "Hospital Infrastructure",
     headline: "Healthcare Centers & Diagnostic Labs",
     desc: "Specialized hospital and clinic construction complying with healthcare workflow standards, medical gas pipeline provisions, hygienic finishes, and heavy diagnostic equipment load requirements.",
-    image: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&q=80",
+    image: "/images/projects/hospital-building.jpg",
     tags: ["Hospitals", "Clinics", "Diagnostic Labs"],
   },
   {
@@ -38,7 +38,7 @@ const services = [
     title: "Industrial Projects",
     headline: "PEB Steel Buildings & Heavy Warehouses",
     desc: "Pre-Engineered Building (PEB) steel structures, industrial factories, and logistic warehouses built with heavy load-bearing concrete flooring and long-span roofing systems.",
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+    image: "/images/projects/industrial-warehouse.jpg",
     tags: ["PEB Sheds", "Warehouses", "Factories"],
   },
   {
@@ -47,7 +47,7 @@ const services = [
     title: "Renovation Works",
     headline: "Structural Retrofitting & Modern Facelifts",
     desc: "Transforming existing properties through structural strengthening, additional floor additions, contemporary elevation modernization, and advanced leak-proof waterproofing.",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+    image: "/images/ongoing_projects/ongoing-site-29.jpeg",
     tags: ["Elevation Remodeling", "Floor Additions", "Waterproofing"],
   },
   {
@@ -56,7 +56,7 @@ const services = [
     title: "2D & 3D Vastu Planning",
     headline: "Floor Plans, 3D Elevation & Sanctions",
     desc: "Scientific Vastu-compliant 2D architectural blueprints, photorealistic 3D exterior elevations, walkthroughs, and municipal approval sanction drawings.",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+    image: "/images/projects/architectural-3d-elevation.jpg",
     tags: ["Vastu Floor Plans", "3D Elevations", "Sanction Drawings"],
   },
   {
@@ -65,7 +65,7 @@ const services = [
     title: "Luxury Modular Interiors & Turnkey Fitouts",
     headline: "Bespoke Modular Kitchens, Wardrobes & Living Spaces",
     desc: "End-to-end modular interior design & execution using 100% BWP Marine Plywood, Hafele/Hettich German soft-close hardware, Gyproc false ceilings with indirect LED cove lighting, custom PU TV media walls, and acoustic wall panelling.",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
+    image: "/images/interiors/interior-project-03.jpeg",
     tags: ["Modular Kitchens", "Walk-in Wardrobes", "False Ceilings", "TV Media Walls", "Quartz Surfaces"],
   },
 ];

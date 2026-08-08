@@ -11,28 +11,28 @@ const teamRoles = [
     specs: "B.E. Civil & Structural Certified",
     desc: "Qualified site engineers managing daily workforce deployment, concrete batch monitoring, shuttering alignment, and safety protocols.",
     icon: Building2,
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    image: "/images/about/er-kumar-owner.jpg",
   },
   {
     title: "2D/3D Vastu Architectural Team",
     specs: "Traditional Vastu & BIM Modeling",
     desc: "Architects specializing in traditional Vastu Shastra orientation, photorealistic 3D elevations, and DTCP municipal sanction drawings.",
     icon: Compass,
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+    image: "/images/projects/architectural-3d-elevation.jpg",
   },
   {
     title: "Modular Interior Joinery Craftsmen",
     specs: "German Hardware & CNC Finish",
     desc: "Specialized craftsmen handling German-hardware modular kitchens, designer POP false ceilings, and custom veneer wardrobes.",
     icon: Layers,
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80",
+    image: "/images/interiors/interior-project-03.jpeg",
   },
   {
     title: "Commercial & Healthcare Specialists",
     specs: "PEB Steel & Hospital Protocols",
     desc: "Engineers experienced in structural glazing, medical gas piping, cleanroom HVAC, and heavy-duty PEB industrial warehouse construction.",
     icon: Users,
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    image: "/images/interiors/interior-project-07.jpeg",
   },
 ];
 

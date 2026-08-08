@@ -283,7 +283,7 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Krishnagiri Main Bazaar, Krishnagiri",
     area: "8,500 Sq.Ft",
     year: "2023",
-    image: "/images/completed_projects/completed-project-05.jpeg",
+    image: "/images/interiors/interior-project-07.jpeg",
     gallery: [
       "/images/completed_projects/completed-project-05.jpeg",
       "/images/completed_projects/completed-project-06.jpeg",
@@ -459,7 +459,7 @@ export const aknGalleryProjects: GalleryProject[] = [
     location: "Palacode, Dharmapuri",
     area: "2,900 Sq.Ft",
     year: "2024",
-    image: "/images/completed_projects/completed-project-04.jpeg",
+    image: "/images/projects/architectural-3d-elevation.jpg",
     gallery: [
       "/images/completed_projects/completed-project-04.jpeg",
       "/images/completed_projects/completed-project-01.jpeg",

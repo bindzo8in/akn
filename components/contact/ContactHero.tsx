@@ -19,7 +19,7 @@ export default function ContactHero() {
       {/* Background Architectural Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/about/structural-framing.jpg"
+          src="/images/interiors/interior-project-07.jpeg"
           alt="AKN Construction Contact Headquarters"
           fill
           priority
