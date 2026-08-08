@@ -37,42 +37,45 @@ export default function Footer() {
   return (
     <footer className="border-t border-border bg-card">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-2 space-y-4">
             <Link href="/" className="inline-flex items-center gap-3.5 sm:gap-4 group">
-              <div className="relative size-12 md:size-16 lg:size-20 shrink-0 overflow-hidden rounded-2xl bg-white p-2 border border-border shadow-md transition-transform group-hover:scale-105">
+              <div className="relative size-14 sm:size-16 shrink-0 overflow-hidden rounded-2xl bg-white p-2 border border-border shadow-md transition-transform group-hover:scale-105">
                 <Image
                   src="/images/logo.png"
                   alt="AKN Construction Logo"
                   fill
+                  sizes="(max-width: 640px) 56px, 64px"
                   className="object-contain"
                 />
               </div>
-              <div className="flex flex-col justify-center leading-none">
-                <span className="font-heading text-lg md:text-xl lg:text-2xl font-bold tracking-tight text-foreground">
+              <div className="flex flex-col justify-center">
+                <span className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-foreground">
                   <span className="text-gold">A</span>
                   <span className="text-teal">K</span>
-                  <span className="text-gold">N</span>{" "}
-                  <span className="text-sm md:text-base font-bold text-foreground">Construction & Interiors</span>
+                  <span className="text-gold">N</span>
                 </span>
-                <span className="text-[10px] md:text-xs font-extrabold tracking-widest text-teal uppercase mt-1.5">
-                  Engineer / Contractors
+                <span className="font-heading text-sm sm:text-base font-bold text-foreground leading-tight">
+                  Construction & Interiors
+                </span>
+                <span className="text-[11px] font-extrabold tracking-widest text-teal uppercase mt-1">
+                  ENGINEER / CONTRACTORS
                 </span>
               </div>
             </Link>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+            <p className="text-sm leading-relaxed text-muted-foreground max-w-md">
               Institutional-grade civil engineering, building contracting, 2D/3D Vastu architecture, and luxury modular interiors across {env.NEXT_PUBLIC_LOCATION_PRIMARY} and {env.NEXT_PUBLIC_LOCATION_SECONDARY}.
             </p>
             <a
               href={env.NEXT_PUBLIC_INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-teal"
-              aria-label="Instagram"
+              className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-teal"
+              aria-label={`Instagram ${env.NEXT_PUBLIC_INSTAGRAM_HANDLE}`}
             >
-              <InstagramIcon className="size-4" />
-              {env.NEXT_PUBLIC_INSTAGRAM_HANDLE}
+              <InstagramIcon className="size-4 text-teal" />
+              <span>{env.NEXT_PUBLIC_INSTAGRAM_HANDLE}</span>
             </a>
           </div>
 

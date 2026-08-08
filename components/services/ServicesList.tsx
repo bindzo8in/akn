@@ -227,7 +227,7 @@ function ServiceCard({ service, index }: { service: (typeof services)[0]; index:
           <div className="pt-2">
             <Link
               href={`/contact?service=${encodeURIComponent(service.title)}`}
-              className="inline-flex items-center gap-2 rounded-xl bg-gold px-5 py-2.5 text-xs font-bold text-[oklch(0.15_0_0)] shadow-sm transition-all hover:bg-[oklch(0.84_0.15_86)] hover:gap-3"
+              className="inline-flex items-center gap-2 rounded-xl bg-gold px-5 py-2.5 text-xs font-extrabold text-slate-950 shadow-sm transition-all hover:bg-gold/90 hover:gap-3"
             >
               Consult for {service.title}
               <ArrowRight className="size-4" />

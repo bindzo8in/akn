@@ -165,7 +165,7 @@ export default function ServicesScopeMatrix() {
                   href={`/contact?package=${encodeURIComponent(pkg.name)}`}
                   className={`flex w-full items-center justify-center rounded-xl py-3 text-xs font-bold transition-all ${
                     pkg.isPopular
-                      ? "bg-gold text-[oklch(0.15_0_0)] shadow-md hover:bg-[oklch(0.84_0.15_86)] hover:shadow-lg"
+                      ? "bg-gold text-slate-950 font-extrabold shadow-md hover:bg-gold/90 hover:shadow-lg"
                       : "border border-border bg-muted/80 text-foreground hover:bg-muted"
                   }`}
                 >

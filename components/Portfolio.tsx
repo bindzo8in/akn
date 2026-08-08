@@ -264,7 +264,7 @@ export default function Portfolio() {
                 <Link
                   href="/contact"
                   onClick={() => setSelectedProject(null)}
-                  className="inline-flex items-center gap-2 rounded-xl bg-gold px-5 py-2 text-xs font-bold text-[oklch(0.15_0_0)] shadow-md"
+                  className="inline-flex items-center gap-2 rounded-xl bg-gold px-5 py-2 text-xs font-extrabold text-slate-950 shadow-md hover:bg-gold/90"
                 >
                   <Calendar className="size-3.5" />
                   Schedule Onsite Estimate

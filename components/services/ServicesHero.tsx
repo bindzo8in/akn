@@ -81,7 +81,7 @@ export default function ServicesHero() {
           >
             <a
               href="#services-breakdown"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-[oklch(0.15_0_0)] shadow-lg shadow-gold/20 transition-all hover:bg-[oklch(0.84_0.15_86)] hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-sm font-extrabold text-slate-950 shadow-lg shadow-gold/20 transition-all hover:bg-gold/90 hover:scale-105"
             >
               Explore 6 Core Services
             </a>

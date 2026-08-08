@@ -77,7 +77,7 @@ export const aknGalleryProjects: GalleryProject[] = [
   },
   {
     id: "akn-ong-03",
-    title: "Turnkey Residence Brickwork & Finishing",
+    title: "Teakwood Joinery & Door Frame Fabrication",
     category: "Ongoing Sites",
     location: "Krishnagiri Town",
     area: "2,800 Sq.Ft",
@@ -89,16 +89,16 @@ export const aknGalleryProjects: GalleryProject[] = [
       "/images/ongoing_projects/ongoing-site-11.jpeg",
       "/images/ongoing_projects/ongoing-site-12.jpeg",
     ],
-    tag: "2,800 Sq.Ft • Masonry & Plastering Phase",
+    tag: "2,800 Sq.Ft • Teak Woodwork & Framing Phase",
     description:
-      "Ongoing luxury residence progressing through first-class red brick masonry, lintel level tie bands, and internal cement plastering.",
+      "Ongoing luxury residence progressing through first-class seasoned teakwood door frame fabrication, precision timber joinery, and structural frame anchoring.",
     highlights: [
-      "Plumb-line verified red brick wall construction",
-      "Seismic lintel band RCC reinforcement",
-      "Waterproofing plaster additive application",
-      "Custom teakwood door frame anchoring",
+      "100% Seasoned First-Quality Teakwood frames",
+      "Precision mortise-and-tenon timber joinery",
+      "Custom door frame anchoring & plumb verification",
+      "Termite-resistant protective oil seasoning",
     ],
-    scope: "Superstructure Masonry, Plumbing, MEP & Finishing",
+    scope: "Custom Teak Woodwork, Door Framing, Plumbing & MEP Finishing",
   },
   {
     id: "akn-ong-04",

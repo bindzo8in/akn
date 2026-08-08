@@ -12,7 +12,7 @@ const slides = [
     sub: "End-to-end engineering, contracting, and interior design solutions delivered with uncompromised quality and structural perfection across Dharmapuri & Krishnagiri.",
     cta1: { label: "Get Free Quote", href: "#contact" },
     cta2: { label: "Explore Our Services", href: "#services" },
-    image: "/images/projects/turnkey-masterpiece-after.png",
+    image: "/images/hero/hero-main-bg.jpg",
   },
   {
     headline: "VISUALIZE YOUR DREAM SPACE BEFORE WE BUILD",
@@ -34,17 +34,24 @@ export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const [current, setCurrent] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [loadedSlides, setLoadedSlides] = useState<number[]>([0]);
+
+  useEffect(() => {
+    if (!loadedSlides.includes(current)) {
+      setLoadedSlides((prev) => [...prev, current]);
+    }
+  }, [current, loadedSlides]);
 
   /* ── Initial load animation ── */
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ delay: 0.4 });
+      const tl = gsap.timeline({ delay: 0.2 });
 
-      tl.from(".hero-badge", { y: 20, opacity: 0, duration: 0.6, ease: "power3.out" })
-        .from(".hero-word", { y: 80, opacity: 0, stagger: 0.04, duration: 0.8, ease: "power3.out" }, "-=0.3")
-        .from(".hero-sub", { y: 30, opacity: 0, duration: 0.7, ease: "power3.out" }, "-=0.4")
-        .from(".hero-cta", { y: 25, opacity: 0, stagger: 0.12, duration: 0.6, ease: "power3.out" }, "-=0.3")
-        .from(".hero-scroll", { opacity: 0, duration: 0.8, ease: "power2.out" }, "-=0.2");
+      tl.fromTo(".hero-badge", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out", clearProps: "all" })
+        .fromTo(".hero-word", { y: 40, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.03, duration: 0.6, ease: "power3.out", clearProps: "all" }, "-=0.2")
+        .fromTo(".hero-sub", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: "power3.out", clearProps: "all" }, "-=0.3")
+        .fromTo(".hero-cta", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.5, ease: "power3.out", clearProps: "all" }, "-=0.2")
+        .fromTo(".hero-scroll", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out", clearProps: "all" }, "-=0.2");
     }, sectionRef);
 
     return () => ctx.revert();
@@ -55,7 +62,11 @@ export default function Hero() {
     const interval = setInterval(() => {
       setIsTransitioning(true);
       setTimeout(() => {
-        setCurrent((p) => (p + 1) % slides.length);
+        setCurrent((p) => {
+          const next = (p + 1) % slides.length;
+          setLoadedSlides((prev) => (prev.includes(next) ? prev : [...prev, next]));
+          return next;
+        });
         setIsTransitioning(false);
       }, 400);
     }, 6000);
@@ -70,21 +81,25 @@ export default function Hero() {
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
-      {/* ── Background images (rich, crisp, cross-fade) ── */}
+      {/* ── Background images (lazy-mount inactive slides to boost LCP) ── */}
       {slides.map((s, i) => (
         <div
           key={s.image}
           className="absolute inset-0 transition-opacity duration-1000"
           style={{ opacity: i === current ? 1 : 0 }}
         >
-          <Image
-            src={s.image}
-            alt={`Construction project ${i + 1}`}
-            fill
-            className="object-cover brightness-105 contrast-[1.05]"
-            priority={i === 0}
-            sizes="100vw"
-          />
+          {loadedSlides.includes(i) && (
+            <Image
+              src={s.image}
+              alt={`Construction project ${i + 1}`}
+              fill
+              className="object-cover brightness-105 contrast-[1.05]"
+              priority={i === 0}
+              loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "auto"}
+              sizes="100vw"
+            />
+          )}
         </div>
       ))}
 
@@ -137,14 +152,16 @@ export default function Hero() {
           {/* CTAs */}
           <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
             <a
+              key={`cta1-${current}`}
               href={slide.cta1.href}
-              className="hero-cta inline-flex items-center rounded-xl bg-gold px-8 py-3.5 text-sm font-bold text-[oklch(0.15_0_0)] shadow-xl shadow-gold/25 transition-all hover:bg-[oklch(0.84_0.15_86)] hover:scale-105"
+              className="hero-cta relative z-20 inline-flex items-center rounded-xl bg-gold px-8 py-3.5 text-sm font-extrabold text-slate-950 shadow-xl shadow-gold/25 transition-all hover:bg-gold/90 hover:scale-105"
             >
               {slide.cta1.label}
             </a>
             <a
+              key={`cta2-${current}`}
               href={slide.cta2.href}
-              className="hero-cta inline-flex items-center rounded-xl border border-white/30 bg-black/35 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all hover:border-white/60 hover:bg-black/50 hover:text-white hover:scale-105"
+              className="hero-cta relative z-20 inline-flex items-center rounded-xl border border-white/30 bg-black/35 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition-all hover:border-white/60 hover:bg-black/50 hover:text-white hover:scale-105"
             >
               {slide.cta2.label}
             </a>
@@ -152,20 +169,27 @@ export default function Hero() {
         </div>
 
         {/* Slide indicators */}
-        <div className="mt-14 flex items-center justify-center gap-2">
+        <div className="mt-14 flex items-center justify-center gap-1">
           {slides.map((_, i) => (
             <button
               key={i}
               onClick={() => {
                 setIsTransitioning(true);
                 setTimeout(() => {
+                  setLoadedSlides((prev) => (prev.includes(i) ? prev : [...prev, i]));
                   setCurrent(i);
                   setIsTransitioning(false);
                 }, 400);
               }}
-              className={`h-1.5 rounded-full transition-all duration-500 ${i === current ? "w-10 bg-gold shadow-md" : "w-3 bg-white/40 hover:bg-white/70"}`}
+              className="group flex min-h-[32px] min-w-[32px] items-center justify-center p-1.5 rounded-full focus:outline-none"
               aria-label={`Go to slide ${i + 1}`}
-            />
+            >
+              <span
+                className={`h-2 rounded-full transition-all duration-500 block ${
+                  i === current ? "w-10 bg-gold shadow-md" : "w-4 bg-white/50 group-hover:bg-white/80"
+                }`}
+              />
+            </button>
           ))}
         </div>
       </div>

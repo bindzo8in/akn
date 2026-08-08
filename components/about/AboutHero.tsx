@@ -158,7 +158,7 @@ export default function AboutHero() {
             >
               <a
                 href={`tel:${env.NEXT_PUBLIC_PHONE_PRIMARY.replace(/\s/g, "")}`}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-sm font-bold text-[oklch(0.15_0_0)] shadow-lg shadow-gold/20 transition-all hover:bg-[oklch(0.84_0.15_86)] hover:scale-105"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gold px-6 py-3.5 text-sm font-extrabold text-slate-950 shadow-lg shadow-gold/20 transition-all hover:bg-gold/90 hover:scale-105"
               >
                 Consult Chief Engineer
               </a>
@@ -189,8 +189,8 @@ export default function AboutHero() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <div className="inline-flex items-center gap-1.5 rounded bg-gold px-2.5 py-0.5 text-[11px] font-extrabold text-[oklch(0.15_0_0)] uppercase tracking-wider">
-                    <Award className="size-3.5 text-[oklch(0.15_0_0)]" />
+                  <div className="inline-flex items-center gap-1.5 rounded bg-gold px-2.5 py-0.5 text-[11px] font-extrabold text-white uppercase tracking-wider">
+                    <Award className="size-3.5 text-white" />
                     Managing Director
                   </div>
                   <h3 className="mt-1 font-heading text-2xl font-bold">

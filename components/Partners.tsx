@@ -172,6 +172,7 @@ export default function Partners() {
                     src={brand.logoPath}
                     alt={`${brand.name} Logo`}
                     fill
+                    sizes="160px"
                     className="object-contain"
                   />
                 </div>
@@ -209,6 +210,7 @@ export default function Partners() {
                     src={brand.logoPath}
                     alt={`${brand.name} Official Logo`}
                     fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-contain"
                   />
                 </div>
@@ -245,9 +247,9 @@ export default function Partners() {
               <Sparkles className="size-7" />
             </div>
             <div>
-              <h4 className="font-heading text-base font-bold text-foreground">
+              <h3 className="font-heading text-base font-bold text-foreground">
                 100% Genuine Certified Materials Guaranteed
-              </h4>
+              </h3>
               <p className="mt-0.5 text-xs text-muted-foreground sm:text-sm">
                 Direct mill test certificates (MTC) &amp; manufacturer batch test reports provided for all structural cement and TMT steel pours.
               </p>

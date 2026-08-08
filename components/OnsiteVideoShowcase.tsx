@@ -112,7 +112,7 @@ export default function OnsiteVideoShowcase() {
 
                 {/* Play Button Icon Overlay */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="size-14 rounded-full border-2 border-gold bg-gold/90 text-[oklch(0.15_0_0)] shadow-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:bg-gold">
+                  <div className="size-14 rounded-full border-2 border-gold bg-gold text-slate-950 shadow-2xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-hover:bg-gold/90">
                     <Play className="size-6 fill-current ml-0.5" />
                   </div>
                 </div>

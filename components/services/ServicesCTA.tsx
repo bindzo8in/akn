@@ -72,7 +72,7 @@ export default function ServicesCTA() {
         >
           <a
             href={`tel:${env.NEXT_PUBLIC_PHONE_PRIMARY.replace(/\s/g, "")}`}
-            className="inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-gold px-8 py-4 text-base font-bold text-[oklch(0.15_0_0)] shadow-xl shadow-gold/20 transition-all hover:bg-[oklch(0.84_0.15_86)] hover:shadow-2xl hover:scale-105 sm:w-auto"
+            className="inline-flex w-full items-center justify-center gap-2.5 rounded-2xl bg-gold px-8 py-4 text-base font-extrabold text-slate-950 shadow-xl shadow-gold/20 transition-all hover:bg-gold/90 hover:shadow-2xl hover:scale-105 sm:w-auto"
           >
             <Phone className="size-5" />
             Call Engineer: {env.NEXT_PUBLIC_PHONE_PRIMARY}

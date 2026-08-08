@@ -128,8 +128,9 @@ export default function Navbar() {
     }
   };
 
-  const navTextColor = isScrolled ? "text-foreground" : "text-white";
-  const navMutedColor = isScrolled ? "text-muted-foreground" : "text-white/80";
+  const isTransparentNav = isHomePage && !isScrolled;
+  const navTextColor = isTransparentNav ? "text-white" : "text-foreground";
+  const navMutedColor = isTransparentNav ? "text-white/90" : "text-muted-foreground";
 
   return (
     <>
@@ -149,6 +150,7 @@ export default function Navbar() {
               <a
                 href={`tel:${env.NEXT_PUBLIC_PHONE_PRIMARY.replace(/\s/g, "")}`}
                 className="flex items-center gap-1.5 transition-opacity hover:opacity-80"
+                aria-label={`Call engineer ${env.NEXT_PUBLIC_PHONE_PRIMARY}`}
               >
                 <Phone className="size-3" />
                 <span className="hidden sm:inline">{env.NEXT_PUBLIC_PHONE_PRIMARY}</span>
@@ -156,6 +158,7 @@ export default function Navbar() {
               <a
                 href={`mailto:${env.NEXT_PUBLIC_EMAIL}`}
                 className="flex items-center gap-1.5 transition-opacity hover:opacity-80"
+                aria-label={`Send email to ${env.NEXT_PUBLIC_EMAIL}`}
               >
                 <Mail className="size-3" />
                 <span className="hidden sm:inline">{env.NEXT_PUBLIC_EMAIL}</span>
@@ -182,9 +185,9 @@ export default function Navbar() {
         {/* ── Main Navigation Bar ── */}
         <nav
           className={`transition-all duration-300 ${
-            isScrolled
-              ? "border-b border-border/50 bg-background/95 shadow-md backdrop-blur-xl py-3"
-              : "bg-black/40 backdrop-blur-md border-b border-white/10 py-3.5"
+            isTransparentNav
+              ? "bg-black/40 backdrop-blur-md border-b border-white/10 py-3.5"
+              : "border-b border-border/50 bg-background/95 shadow-md backdrop-blur-xl py-3"
           }`}
         >
           <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6">
@@ -199,6 +202,7 @@ export default function Navbar() {
                   src="/images/logo.png"
                   alt="AKN Construction Logo"
                   fill
+                  sizes="(max-width: 768px) 40px, (max-width: 1024px) 56px, 64px"
                   className="object-contain"
                   priority
                 />
@@ -206,13 +210,13 @@ export default function Navbar() {
               <div className="flex flex-col justify-center leading-none">
                 <span className="font-heading text-base sm:text-lg md:text-xl lg:text-2xl font-bold tracking-tight">
                   <span className="text-gold">A</span>
-                  <span className={isScrolled ? "text-teal" : "text-white"}>K</span>
+                  <span className={isTransparentNav ? "text-white" : "text-teal"}>K</span>
                   <span className="text-gold">N</span>
-                  <span className={`ml-1.5 text-xs sm:text-sm md:text-base font-bold tracking-tight ${isScrolled ? "text-foreground" : "text-white"}`}>
+                  <span className={`ml-1.5 text-xs sm:text-sm md:text-base font-bold tracking-tight ${isTransparentNav ? "text-white" : "text-foreground"}`}>
                     Construction & Interiors
                   </span>
                 </span>
-                <span className={`text-[10px] sm:text-xs md:text-xs font-extrabold tracking-widest uppercase mt-1 ${isScrolled ? "text-teal" : "text-gold"}`}>
+                <span className={`text-[10px] sm:text-xs md:text-xs font-extrabold tracking-widest uppercase mt-1 ${isTransparentNav ? "text-gold" : "text-teal"}`}>
                   Engineer / Contractors
                 </span>
               </div>
@@ -237,17 +241,17 @@ export default function Navbar() {
                       onClick={() => handleNavClick(link)}
                       className={`relative px-3.5 py-1.5 text-sm font-medium transition-colors ${
                         isActive
-                          ? isScrolled
-                            ? "text-teal font-bold"
-                            : "text-gold font-bold"
-                          : `${navMutedColor} hover:${navTextColor}`
+                          ? isTransparentNav
+                            ? "text-gold font-bold"
+                            : "text-teal font-bold"
+                          : `${navMutedColor} ${isTransparentNav ? "hover:text-gold" : "hover:text-teal"}`
                       }`}
                     >
                       {link.label}
                       {isActive && (
                         <span
                           className={`absolute bottom-0 left-3 right-3 h-0.5 rounded-full ${
-                            isScrolled ? "bg-teal" : "bg-gold"
+                            isTransparentNav ? "bg-gold" : "bg-teal"
                           }`}
                         />
                       )}
@@ -259,11 +263,11 @@ export default function Navbar() {
 
             {/* Right Controls: Theme Toggle & Desktop CTA */}
             <div className="flex items-center gap-3">
-              <ThemeToggle isScrolled={isScrolled} />
+              <ThemeToggle isScrolled={!isTransparentNav} />
 
               <Link
                 href="/contact"
-                className="hidden rounded-xl bg-gold px-4 py-2 text-sm font-bold text-[oklch(0.15_0_0)] shadow-sm transition-all hover:bg-[oklch(0.84_0.15_86)] hover:shadow-md md:inline-flex"
+                className="inline-flex rounded-xl bg-gold px-3.5 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-sm font-extrabold text-slate-950 shadow-sm transition-all hover:bg-gold/90 hover:shadow-md"
               >
                 Get Free Quote
               </Link>
@@ -296,6 +300,7 @@ export default function Navbar() {
                 src="/images/logo.png"
                 alt="AKN Construction Logo"
                 fill
+                sizes="36px"
                 className="object-contain"
               />
             </div>
@@ -316,6 +321,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsMobileOpen(false)}
               className="rounded-xl p-2 text-foreground hover:bg-muted"
+              aria-label="Close navigation menu"
             >
               <X className="size-6" />
             </button>
@@ -335,7 +341,7 @@ export default function Navbar() {
           <Link
             href="/contact"
             onClick={() => setIsMobileOpen(false)}
-            className="mt-6 w-full max-w-xs rounded-xl bg-gold py-4 text-center text-base font-bold text-[oklch(0.15_0_0)] shadow-md transition-all hover:bg-gold/90"
+            className="mt-6 w-full max-w-xs rounded-xl bg-gold py-4 text-center text-base font-extrabold text-slate-950 shadow-md transition-all hover:bg-gold/90"
           >
             Get Free Quote
           </Link>

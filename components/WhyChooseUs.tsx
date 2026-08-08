@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { ShieldCheck, BadgeDollarSign, Handshake, Clock, Award, CheckCircle2, ArrowRight } from "lucide-react";
 import { env } from "@/app/env";
 
@@ -92,7 +91,7 @@ export default function WhyChooseUs() {
                   <Award className="size-5" />
                 </div>
                 <div>
-                  <h4 className="font-heading text-sm font-bold text-foreground">AKN Quality Guarantee</h4>
+                  <h3 className="font-heading text-sm font-bold text-foreground">AKN Quality Guarantee</h3>
                   <p className="text-xs text-muted-foreground">100% Tested Structural Concrete & TMT Steel</p>
                 </div>
               </div>

@@ -171,7 +171,7 @@ export default function ContactForm() {
                 </button>
                 <a
                   href={`tel:${env.NEXT_PUBLIC_PHONE_PRIMARY.replace(/\s/g, "")}`}
-                  className="inline-flex items-center gap-2 rounded-xl bg-gold px-6 py-2.5 text-xs font-bold text-[oklch(0.15_0_0)] shadow-md"
+                  className="inline-flex items-center gap-2 rounded-xl bg-gold px-6 py-2.5 text-xs font-extrabold text-slate-950 shadow-md hover:bg-gold/90"
                 >
                   <PhoneCall className="size-3.5" />
                   Call Directly Now
@@ -354,7 +354,7 @@ export default function ContactForm() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-gold px-8 py-3.5 text-sm font-bold text-[oklch(0.15_0_0)] shadow-lg shadow-gold/20 transition-all hover:bg-[oklch(0.84_0.15_86)] hover:scale-105 disabled:opacity-50"
+                    className="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl bg-gold px-8 py-3.5 text-sm font-extrabold text-slate-950 shadow-lg shadow-gold/20 transition-all hover:bg-gold/90 hover:scale-105 disabled:opacity-50"
                   >
                     {isSubmitting ? (
                       <span>Processing Calculation...</span>
