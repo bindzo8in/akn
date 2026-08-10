@@ -3,6 +3,7 @@ import Script from "next/script";
 import PortfolioHero from "@/components/portfolio/PortfolioHero";
 import PortfolioGallery from "@/components/portfolio/PortfolioGallery";
 import PortfolioBeforeAfter from "@/components/portfolio/PortfolioBeforeAfter";
+import ExistingCustomers from "@/components/ExistingCustomers";
 import OnsiteVideoShowcase from "@/components/OnsiteVideoShowcase";
 import PortfolioTestimonials from "@/components/portfolio/PortfolioTestimonials";
 import ServicesCTA from "@/components/services/ServicesCTA";
@@ -52,6 +53,7 @@ export default function PortfolioPage() {
         <PortfolioHero />
         <PortfolioGallery />
         <PortfolioBeforeAfter />
+        <ExistingCustomers />
         <OnsiteVideoShowcase />
         <PortfolioTestimonials />
         <ServicesCTA />

@@ -3,6 +3,7 @@ import Highlights from "@/components/Highlights";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
+import ExistingCustomers from "@/components/ExistingCustomers";
 import OnsiteVideoShowcase from "@/components/OnsiteVideoShowcase";
 import Workflow from "@/components/Workflow";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -18,6 +19,7 @@ export default function Home() {
       <About />
       <Services />
       <Portfolio />
+      <ExistingCustomers />
       <OnsiteVideoShowcase />
       <Workflow />
       <WhyChooseUs />
