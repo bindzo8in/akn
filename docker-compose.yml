@@ -1,0 +1,15 @@
+services:
+  web:
+    image: ghcr.io/bindzo8in/akn:latest
+    container_name: akn
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    networks:
+      - web_network
+
+networks:
+  web_network:
+    external: true
