@@ -4,7 +4,7 @@
 # 1. Dependencies
 # ============================================================
 
-FROM node:20-alpine AS deps
+FROM node:22-alpine AS deps
 
 RUN apk add --no-cache libc6-compat
 
@@ -26,7 +26,7 @@ RUN pnpm config set ignore-scripts false && \
 # 2. Builder
 # ============================================================
 
-FROM node:20-alpine AS builder
+FROM node:22-alpine AS builder
 
 RUN apk add --no-cache libc6-compat
 
@@ -80,7 +80,7 @@ RUN --mount=type=secret,id=NEXT_PUBLIC_BUSINESS_NAME,env=NEXT_PUBLIC_BUSINESS_NA
 # 3. Production Runner
 # ============================================================
 
-FROM node:20-alpine AS runner
+FROM node:22-alpine AS runner
 
 WORKDIR /app
 
